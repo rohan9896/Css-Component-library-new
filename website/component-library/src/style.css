@@ -1,0 +1,70 @@
+:root {
+  /* Colors */
+  --blue: #2874f0;
+  --pink: #ff3e6c;
+  --red: #dc3545;
+  --yellow: #e2b032;
+  --lightgreen: #42b72a;
+  --purple: #7952b3;
+  --lightOrange: #ff9f00;
+  --orange: #fb641b;
+  --greenishBlue: #17a2b8;
+  --grey: #f0e9e6;
+}
+
+
+/* Buttons */
+/* Primary Button */
+.primary-button {
+  padding: 0.8rem 2rem;
+  color: white;
+  font-size: medium;
+  box-shadow: 0px 2px 4px 1px rgb(0 0 0 / 20%);
+  border: none;
+  border-radius: 0.2rem;
+}
+.primary-button.purple {
+  background-color: var(--purple);
+}
+.primary-button.greenishBlue {
+  background-color: var(--greenishBlue);
+}
+.primary-button.blue {
+  background-color: var(--blue);
+}
+.primary-button.pink {
+  background-color: var(--pink);
+}
+.primary-button.red {
+  background-color: var(--red);
+}
+.primary-button.lightOrange {
+    background-color: var(--lightOrange);
+}
+.primary-button.yellow {
+  background-color: var(--yellow);
+}
+.primary-button.lightgreen {
+  background-color: var(--lightgreen);
+}
+.primary-button.orange {
+  background-color: var(--orange);
+}
+.primary-button.grey {
+  background-color: var(--grey);
+}
+
+
+/* icon button */
+.icon-button {
+  background-color: var(--grey);
+  border: none;
+  padding: 0.5rem;
+}
+
+.icon-button > img {
+  height: 30px;
+  width: 30px;
+}
+
+

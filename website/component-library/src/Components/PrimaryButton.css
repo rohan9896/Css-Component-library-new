@@ -1,0 +1,61 @@
+.primaryButton__headingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.primaryButton__headingContainer > button {
+  margin: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: white;
+  color: blue;
+  border: 1px solid rgba(25, 118, 210, 0.5);
+}
+
+
+.primaryButton__buttonList {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.primaryButton__buttonList > li {
+  margin: 1.5rem;
+}
+
+.primaryButton__codeContainer {
+  background-color: #f0e9e6;
+  padding: 2rem;
+  margin: 0.2rem 10rem;
+  position: relative;
+  box-shadow: 5px 10px 8px rgb(231 220 220);
+}
+
+.primaryButton__codeContainer > button {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  background-color: white;
+  color: blue;
+  border: 1px solid;
+  border-radius: 0.3rem;
+}
+
+.primaryButton__codeContainer > button:hover {
+  color: white;
+  background-color: #2874f0;
+}
+
+@media screen and (max-width: 768px) {
+  .primaryButton__codeContainer {
+    margin: 0;
+  }
+  p {
+    word-wrap: break-word;
+  }
+}
+
+textarea {
+  width: 200px;
+}
