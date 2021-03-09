@@ -6,31 +6,31 @@ const icons = [
   {
     id: 1,
     img:
-      "https://raw.githubusercontent.com/rohan9896/CSS-component-library/0c5b4503814556a48beebd849585d17afb142e06/icons/left-arrow.svg",
+      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/bdd6185bd9d5abc17cafa6d1894eac166b5583f5/icons/left-arrow.svg",
     name: "Left Arrow",
   },
   {
     id: 2,
     img:
-      "https://raw.githubusercontent.com/rohan9896/CSS-component-library/0c5b4503814556a48beebd849585d17afb142e06/icons/rightArrow.svg",
+      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/bdd6185bd9d5abc17cafa6d1894eac166b5583f5/icons/rightArrow.svg",
     name: "Right Arrow",
   },
   {
     id: 3,
     img:
-      "https://raw.githubusercontent.com/rohan9896/CSS-component-library/eae5ccfe00eabccae185a910d6a29a36f8feb893/icons/cancel.svg",
+      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/bdd6185bd9d5abc17cafa6d1894eac166b5583f5/icons/trash.svg",
     name: "Cancel",
   },
   {
     id: 4,
     img:
-      "https://raw.githubusercontent.com/rohan9896/CSS-component-library/ad81ebf5b89717f278f85a1970c851520dfa6768/icons/check.svg",
+      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/bdd6185bd9d5abc17cafa6d1894eac166b5583f5/icons/check.svg",
     name: "Check",
   },
   {
     id: 5,
     img:
-      "https://raw.githubusercontent.com/rohan9896/CSS-component-library/eae5ccfe00eabccae185a910d6a29a36f8feb893/icons/trash.svg",
+      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/bdd6185bd9d5abc17cafa6d1894eac166b5583f5/icons/trash.svg",
     name: "Trash",
   },
 ];
