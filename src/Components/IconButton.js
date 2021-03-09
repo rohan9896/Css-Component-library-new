@@ -18,7 +18,7 @@ const icons = [
   {
     id: 3,
     img:
-      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/bdd6185bd9d5abc17cafa6d1894eac166b5583f5/icons/trash.svg",
+      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/9e0cd0d6c80388b6f3a74054b0f1c73b91a2980f/icons/cancel.svg",
     name: "Cancel",
   },
   {
