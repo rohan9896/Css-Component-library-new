@@ -37,9 +37,11 @@ const icons = [
 ];
 
 function IconButton() {
-  const [img, setImg] = useState(
+  const [iconImg, seticonImg] = useState(
     `https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/4d0222bc00ff03f8dac8b8c35431062c89807b4a/icons/icon%20component/left-arrow.svg`
   );
+  const [ownIconClicked, setownIconClicked] = useState(false);
+  const [linkVal, setlinkVal] = useState('');
 
   return (
     <div>
@@ -50,20 +52,22 @@ function IconButton() {
             <li key={iconObj.id}>
               <button
                 className="icon-button"
-                onClick={() => setImg(iconObj.img)}
+                onClick={() => seticonImg(iconObj.img)}
               >
                 <img alt={iconObj.name} src={iconObj.img} />
               </button>
             </li>
           );
         })}
+        <button onClick={() => setownIconClicked(!ownIconClicked)}>Add your own icon</button>
       </ul>
+      {ownIconClicked && <textarea value={linkVal} onChange={(e) => setlinkVal(e.target.value)} placeholder="enter link of your icon image"></textarea>}
       <div className="codeContainer">
-        <p>{`<button class="icon-button"><img src="${img}" /></button>`}</p>
+        <p>{`<button class="icon-button"><img src="${ownIconClicked ? linkVal : iconImg}" /></button>`}</p>
         <button
           onClick={() =>
             navigator.clipboard.writeText(
-              `<button class="icon-button"><img src="${img}" /></button>`
+              `<button class="icon-button"><img src="${ownIconClicked ? linkVal : iconImg}" /></button>`
             )
           }
         >

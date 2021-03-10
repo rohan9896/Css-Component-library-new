@@ -69,10 +69,20 @@
 
 
 /* Avatar */
-.avatar {
+.faceavatar {
   height: 50px;
   width: 50px;
   border-radius: 50%;
 }
 
+.avatar-alphabet {
+  width: fit-content;
+  color: white;
+  padding: 0.2rem 0.7rem;
+  border-radius: 50%;
+  font-size: xx-large;
+  align-content: center;
+  font-weight: 900;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
 

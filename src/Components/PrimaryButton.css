@@ -24,6 +24,11 @@
   margin: 1.5rem;
 }
 
+.primaryButton__buttonList > li > button {
+  cursor: pointer;
+}
+
+
 textarea {
   width: 200px;
 }

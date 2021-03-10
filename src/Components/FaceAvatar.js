@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import "../base.css";
-import "./Avatar.css";
+import "./FaceAvatar.css";
 import './codecontainer.css';
 
 const faceAvatars = [
@@ -36,7 +36,7 @@ const faceAvatars = [
   },
 ];
 
-function Avatar() {
+function FaceAvatar() {
   const [faceAvatarImage, setFaceAvatarImage] = useState(
     `https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/4d0222bc00ff03f8dac8b8c35431062c89807b4a/icons/avatar%20component/avatarUser.svg`
   );
@@ -45,13 +45,13 @@ function Avatar() {
 
   return (
     <div>
-      <h2>Avatars</h2>
-      <ul className="avatar__list">
+      <h2>Face Avatars</h2>
+      <ul className="faceavatar__list">
         {faceAvatars.map((faceAvatarObj) => {
           return (
             <li key={faceAvatarObj.id}>
               <img
-                className="avatar"
+                className="faceavatar"
                 src={faceAvatarObj.img}
                 alt={faceAvatarObj.name}
                 onClick={() => setFaceAvatarImage(faceAvatarObj.img)}
@@ -62,14 +62,14 @@ function Avatar() {
         <button onClick={() => setOwnPhotoClicked(!ownPhotoClicked)}>Add Your Own Avatar</button>
       </ul>
       {
-          ownPhotoClicked && <textarea value={linkVal} onChange={(e) => setLinkVal(e.target.value)} placeholder='enter link of your photo'></textarea>
+          ownPhotoClicked && <textarea value={linkVal} onChange={(e) => setLinkVal(e.target.value)} placeholder='enter link of your avatar image'></textarea>
       }
       <div className="codeContainer">
-        <p>{`<img class="avatar" src="${ownPhotoClicked ? linkVal : faceAvatarImage}" alt="avatar" />`}</p>
-        <button onClick={() => navigator.clipboard.writeText(`<img class="avatar" src="${ownPhotoClicked ? linkVal : faceAvatarImage}" alt="avatar" />`)}>Copy</button>
+        <p>{`<img class="faceavatar" src="${ownPhotoClicked ? linkVal : faceAvatarImage}" alt="avatar" />`}</p>
+        <button onClick={() => navigator.clipboard.writeText(`<img class="faceavatar" src="${ownPhotoClicked ? linkVal : faceAvatarImage}" alt="avatar" />`)}>Copy</button>
       </div>
     </div>
   );
 }
 
-export default Avatar;
+export default FaceAvatar;
