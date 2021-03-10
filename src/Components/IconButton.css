@@ -9,35 +9,3 @@
   margin: 1.5rem;
 }
 
-.iconButton__codeContainer {
-  background-color: #f0e9e6;
-  padding: 2rem;
-  margin: 0.2rem 10rem;
-  position: relative;
-  box-shadow: 5px 10px 8px rgb(231 220 220);
-}
-
-.iconButton__codeContainer > button {
-  position: absolute;
-  top: 1rem;
-  right: 1rem;
-  background-color: white;
-  color: blue;
-  border: 1px solid;
-  border-radius: 0.3rem;
-  text-overflow: clip;
-}
-
-.iconButton__codeContainer > button:hover {
-  color: white;
-  background-color: #2874f0;
-}
-
-@media screen and (max-width: 768px) {
-  .iconButton__codeContainer {
-    margin: 0;
-  }
-  p {
-    word-wrap: break-word;
-  }
-}

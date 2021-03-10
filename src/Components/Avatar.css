@@ -1,0 +1,22 @@
+.avatar__list {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.avatar__list > button {
+  margin: 2rem;
+  padding: 0.8rem 2rem;
+  background-color: white;
+  color: blue;
+  border: 1px solid rgba(25, 118, 210, 0.5);
+}
+
+.avatar__list > li > img {
+  margin: 2rem;
+}
+
+textarea {
+    margin-bottom: 1rem;
+}

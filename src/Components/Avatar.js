@@ -1,14 +1,75 @@
-import React from 'react'
-import '../base.css';
-// import 'Avatar.css'
+import React, { useState } from "react";
+import "../base.css";
+import "./Avatar.css";
+import './codecontainer.css';
+
+const faceAvatars = [
+  {
+    id: 1,
+    img:
+      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/4d0222bc00ff03f8dac8b8c35431062c89807b4a/icons/avatar%20component/avatarUser.svg",
+    name: "user",
+  },
+  {
+    id: 2,
+    img:
+      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/4d0222bc00ff03f8dac8b8c35431062c89807b4a/icons/avatar%20component/avatarUser2.svg",
+    name: "user2",
+  },
+  {
+    id: 3,
+    img:
+      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/4d0222bc00ff03f8dac8b8c35431062c89807b4a/icons/avatar%20component/avatarMan.svg",
+    name: "man",
+  },
+  {
+    id: 4,
+    img:
+      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/4d0222bc00ff03f8dac8b8c35431062c89807b4a/icons/avatar%20component/avatarWomen.svg",
+    name: "woman",
+  },
+  {
+    id: 5,
+    img:
+      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/4d0222bc00ff03f8dac8b8c35431062c89807b4a/icons/avatar%20component/avatarHacker.svg",
+    name: "hacker",
+  },
+];
 
 function Avatar() {
-    return (
-        <div>
-            <h2>Avatars</h2>
-            <img className="avatar" src="https://instagram.fixc1-4.fna.fbcdn.net/v/t51.2885-19/s320x320/156517218_440161457404541_6372279708468127589_n.jpg?tp=1&_nc_ht=instagram.fixc1-4.fna.fbcdn.net&_nc_ohc=c6EPoG91QdcAX9bQ5BL&oh=e55f0a90c9f1b2276e37c58688947703&oe=60707CB6" alt="me" />
-        </div>
-    )
+  const [faceAvatarImage, setFaceAvatarImage] = useState(
+    `https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/4d0222bc00ff03f8dac8b8c35431062c89807b4a/icons/avatar%20component/avatarUser.svg`
+  );
+  const [ownPhotoClicked, setOwnPhotoClicked] = useState(false);
+  const [linkVal, setLinkVal] = useState('');
+
+  return (
+    <div>
+      <h2>Avatars</h2>
+      <ul className="avatar__list">
+        {faceAvatars.map((faceAvatarObj) => {
+          return (
+            <li key={faceAvatarObj.id}>
+              <img
+                className="avatar"
+                src={faceAvatarObj.img}
+                alt={faceAvatarObj.name}
+                onClick={() => setFaceAvatarImage(faceAvatarObj.img)}
+              />
+            </li>
+          );
+        })}
+        <button onClick={() => setOwnPhotoClicked(!ownPhotoClicked)}>Add Your Own Photo</button>
+      </ul>
+      {
+          ownPhotoClicked && <textarea value={linkVal} onChange={(e) => setLinkVal(e.target.value)} placeholder='enter link of your photo'></textarea>
+      }
+      <div className="codeContainer">
+        <p>{`<img class="avatar" src="${ownPhotoClicked ? linkVal : faceAvatarImage}" alt="avatar" />`}</p>
+        <button onClick={() => navigator.clipboard.writeText(`<img class="avatar" src="${ownPhotoClicked ? linkVal : faceAvatarImage}" alt="avatar" />`)}>Copy</button>
+      </div>
+    </div>
+  );
 }
 
-export default Avatar
+export default Avatar;

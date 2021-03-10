@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import '../base.css'
 import "./PrimaryButton.css";
+import './codecontainer.css';
 
 const colors = [
   {
@@ -81,7 +82,7 @@ function PrimaryButton() {
           );
         })}
       </ul>
-      <div className="primaryButton__codeContainer">
+      <div className="codeContainer">
         {linkButtonClicked ? (
           <p>{`<a href="${linkVal}" role="button"><button class="primary-button  ${buttonColorCode}">Link Button</button></a>`}</p>
         ) : (

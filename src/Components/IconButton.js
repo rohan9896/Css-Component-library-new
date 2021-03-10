@@ -1,43 +1,44 @@
 import React, { useState } from "react";
 import "../base.css"
 import "./IconButton.css";
+import './codecontainer.css';
 
 const icons = [
   {
     id: 1,
     img:
-      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/bdd6185bd9d5abc17cafa6d1894eac166b5583f5/icons/left-arrow.svg",
+      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/4d0222bc00ff03f8dac8b8c35431062c89807b4a/icons/icon%20component/left-arrow.svg",
     name: "Left Arrow",
   },
   {
     id: 2,
     img:
-      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/bdd6185bd9d5abc17cafa6d1894eac166b5583f5/icons/rightArrow.svg",
+      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/4d0222bc00ff03f8dac8b8c35431062c89807b4a/icons/icon%20component/rightArrow.svg",
     name: "Right Arrow",
   },
   {
     id: 3,
     img:
-      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/9e0cd0d6c80388b6f3a74054b0f1c73b91a2980f/icons/cancel.svg",
+      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/4d0222bc00ff03f8dac8b8c35431062c89807b4a/icons/icon%20component/cancel.svg",
     name: "Cancel",
   },
   {
     id: 4,
     img:
-      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/bdd6185bd9d5abc17cafa6d1894eac166b5583f5/icons/check.svg",
+      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/4d0222bc00ff03f8dac8b8c35431062c89807b4a/icons/icon%20component/check.svg",
     name: "Check",
   },
   {
     id: 5,
     img:
-      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/bdd6185bd9d5abc17cafa6d1894eac166b5583f5/icons/trash.svg",
+      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/4d0222bc00ff03f8dac8b8c35431062c89807b4a/icons/icon%20component/trash.svg",
     name: "Trash",
   },
 ];
 
 function IconButton() {
   const [img, setImg] = useState(
-    `https://raw.githubusercontent.com/rohan9896/CSS-component-library/0c5b4503814556a48beebd849585d17afb142e06/icons/left-arrow.svg`
+    `https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/4d0222bc00ff03f8dac8b8c35431062c89807b4a/icons/icon%20component/left-arrow.svg`
   );
 
   return (
@@ -51,13 +52,13 @@ function IconButton() {
                 className="icon-button"
                 onClick={() => setImg(iconObj.img)}
               >
-                <img alt="icon" src={iconObj.img} />
+                <img alt={iconObj.name} src={iconObj.img} />
               </button>
             </li>
           );
         })}
       </ul>
-      <div className="iconButton__codeContainer">
+      <div className="codeContainer">
         <p>{`<button class="icon-button"><img src="${img}" /></button>`}</p>
         <button
           onClick={() =>
