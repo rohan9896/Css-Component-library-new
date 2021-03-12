@@ -15,6 +15,7 @@
   border: 1px solid;
   border-radius: 0.3rem;
   text-overflow: clip;
+  cursor: copy;
 }
 
 .codeContainer > button:hover {

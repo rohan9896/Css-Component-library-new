@@ -7,4 +7,5 @@
 
 .alert__list > li {
     margin: 1.5rem;
+    cursor: pointer;
 }
