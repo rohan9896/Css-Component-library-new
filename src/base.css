@@ -86,3 +86,67 @@
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+/* alert */
+.alert {
+  display: flex;
+  align-items: center;
+}
+
+.alertText {
+  background-color: white;
+  border: 1px solid black;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  width: 20rem;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 1rem 0.5rem;
+  align-items: center;
+}
+
+.alertText.success {
+  color: green;
+}
+.alertText.failure {
+  color: red;
+}
+.alertText.warning {
+  color: #D97706;
+}
+.alertText.info {
+  color: var(--blue);
+}
+
+.alertIcon {
+  height: 42px;
+  padding: 0.3rem 0.5rem ;
+}
+
+.alertIcon.success {
+  background-color: #42b72a;
+}
+.alertIcon.failure {
+  background-color: rgb(179, 11, 11);
+}
+.alertIcon.warning {
+  background-color: #D97706;
+}
+.alertIcon.info {
+  background-color: var(--blue);
+}
+
+
+.alert > div > img {
+  width: 40px;
+  height: 40px;
+}
+
+.cross {
+  cursor: pointer;
+}
+
+@media screen and (max-width: 520px) {
+  .alertText {
+    width: 14rem;
+  }
+}
+

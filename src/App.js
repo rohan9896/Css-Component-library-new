@@ -3,6 +3,7 @@ import './Components/Buttons'
 import Buttons from './Components/Buttons';
 import FaceAvatar from './Components/FaceAvatar'
 import AlphabetsAvatar from './Components/AlphabetsAvatar'
+import Alert from './Components/Alert'
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Buttons />
       <FaceAvatar />
       <AlphabetsAvatar />
+      <Alert />
     </div>
   );
 }
