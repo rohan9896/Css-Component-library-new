@@ -1,0 +1,13 @@
+.navbar__linkInput {
+    display: flex;
+    justify-content: center;
+    margin: 1rem 0;
+}
+
+.navbar__linkInput > p {
+    margin: 0.5rem;
+}
+
+.navbar__linkInput > input {
+    width: 15rem;
+}

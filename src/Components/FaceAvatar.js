@@ -59,7 +59,7 @@ function FaceAvatar() {
             </li>
           );
         })}
-        <button onClick={() => setOwnPhotoClicked(!ownPhotoClicked)}>Add Your Own Avatar</button>
+        <button onClick={() => setOwnPhotoClicked(!ownPhotoClicked)}>Add Your Own Image</button>
       </ul>
       {
           ownPhotoClicked && <textarea value={linkVal} onChange={(e) => setLinkVal(e.target.value)} placeholder='enter link of your avatar image'></textarea>
