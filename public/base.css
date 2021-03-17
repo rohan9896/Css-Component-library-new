@@ -150,3 +150,48 @@
   }
 }
 
+
+/* Navbar */
+.nav1__navList {
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  background-color: black;
+  color: white;
+  padding: 1rem;
+}
+
+.nav1__navEnd {
+  display: flex;
+}
+
+.nav1__navStart > a {
+  margin-right: 1.5rem;
+  text-decoration: none;
+  color: inherit;
+}
+
+.nav1__navEnd > span {
+  margin-right: 1rem;
+}
+
+.nav1__navEnd > span > button {
+  padding: .5rem 1.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid white;
+  color: white;
+  background-color: black;
+}
+
+.nav1__navEnd > span > button:hover {
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 564px) {
+  .nav1__navEnd > span > input {
+    display: none;
+  }
+}

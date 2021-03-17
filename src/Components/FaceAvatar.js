@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../base.css";
 import "./FaceAvatar.css";
 import './codecontainer.css';
+import './Heading.css'
 
 const faceAvatars = [
   {
@@ -45,7 +46,7 @@ function FaceAvatar() {
 
   return (
     <div>
-      <h2>Face Avatars</h2>
+      <h1 className='title'>Face Avatars</h1>
       <ul className="faceavatar__list">
         {faceAvatars.map((faceAvatarObj) => {
           return (

@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../base.css";
 import "./Alert.css";
 import "./codecontainer.css";
+import './Heading.css'
 
 const alerts = [
   {
@@ -38,7 +39,7 @@ function Alert() {
   const [alert, setAlert] = useState(alerts[0]);
   return (
     <div>
-      <h2>Alerts</h2>
+      <h1 className='title'>Alerts</h1>
       <ul className="alert__list">
         {alerts.map((alertObj) => {
           return (

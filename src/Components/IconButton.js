@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../base.css"
 import "./IconButton.css";
 import './codecontainer.css';
+import './Heading.css'
 
 const icons = [
   {
@@ -45,7 +46,7 @@ function IconButton() {
 
   return (
     <div>
-      <h2>Icon Buttons</h2>
+      <h2 className='subtitle'>Icon Buttons</h2>
       <ul className="iconButton__buttonList">
         {icons.map((iconObj) => {
           return (

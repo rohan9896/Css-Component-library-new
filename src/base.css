@@ -152,7 +152,7 @@
 
 
 /* Navbar */
-.ghost__navList {
+.nav1__navList {
   list-style-type: none;
   display: flex;
   justify-content: space-between;
@@ -162,27 +162,21 @@
   padding: 1rem;
 }
 
-.ghost__navEnd {
+.nav1__navEnd {
   display: flex;
 }
 
-.ghost__navStart > a {
+.nav1__navStart > a {
   margin-right: 1.5rem;
   text-decoration: none;
   color: inherit;
 }
 
-.ghost__navEnd > span {
+.nav1__navEnd > span {
   margin-right: 1rem;
 }
 
-
-.ghost__navEnd > span > a > img {
-  height: 1.5rem;
-  width: 1.5rem;
-}
-
-.ghost__navEnd > span > button {
+.nav1__navEnd > span > button {
   padding: .5rem 1.5rem;
   border-radius: 0.5rem;
   border: 1px solid white;
@@ -190,14 +184,14 @@
   background-color: black;
 }
 
-.ghost__navEnd > span > button:hover {
+.nav1__navEnd > span > button:hover {
   background-color: white;
   color: black;
   cursor: pointer;
 }
 
 @media screen and (max-width: 564px) {
-  .ghost__navEnd > span > a {
+  .nav1__navEnd > span > input {
     display: none;
   }
 }

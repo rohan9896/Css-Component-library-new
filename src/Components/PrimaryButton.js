@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import '../base.css'
 import "./PrimaryButton.css";
 import './codecontainer.css';
+import './Heading.css'
 
 const colors = [
   {
@@ -56,7 +57,7 @@ function PrimaryButton() {
   return (
     <div>
       <div className="primaryButton__headingContainer">
-        <h2>Primary Button</h2>
+        <h2 className='subtitle'>Primary Button</h2>
         <button onClick={() => setLinkButtonClicked(!linkButtonClicked)}>
           {linkButtonClicked ? "Hide Link Button" : "Add Link Button"}
         </button>

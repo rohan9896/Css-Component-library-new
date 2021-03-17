@@ -2,63 +2,77 @@ import React, { useState } from "react";
 import "../base.css";
 import "./Navbar.css";
 import "./codecontainer.css";
+import './Heading.css'
 
 function Navbar() {
-  const [[link1, link2, link3], setLink] = useState([
-    "https://undraw.co/search",
-    "https://undraw.co/search",
-    "https://undraw.co/search",
+  const [[link1, link2, link3], setLink] = useState(["", "", ""]);
+  const [[nameOfLink1, nameOfLink2, nameOfLink3], setNameOfLinks] = useState([
+    "Name1",
+    "Name2",
+    "Name3",
   ]);
 
   return (
     <div>
       <div className="Navbar__container">
-        <h2>Navbars</h2>
+        <h1 className='title'>Navbars</h1>
         <div>
           <div className="navbar__linkInput">
             <p>Link 1: </p>
-            <input placeholder="Enter link here" />
+            <input
+              value={nameOfLink1}
+              onChange={(e) =>
+                setNameOfLinks([e.target.value, nameOfLink2, nameOfLink3])
+              }
+              placeholder="Enter name of link 1"
+            />
+            <input
+              value={link1}
+              onChange={(e) => setLink([e.target.value, link2, link3])}
+              placeholder="Enter link here"
+            />
           </div>
           <div className="navbar__linkInput">
             <p>Link 2: </p>
-            <input placeholder="Enter link here" />
+            <input
+              value={nameOfLink2}
+              onChange={(e) =>
+                setNameOfLinks([nameOfLink1, e.target.value, nameOfLink3])
+              }
+              placeholder="Enter name of link 2"
+            />
+            <input
+              value={link2}
+              onChange={(e) => setLink([link1, e.target.value, link3])}
+              placeholder="Enter link here"
+            />
           </div>
           <div className="navbar__linkInput">
             <p>Link 3: </p>
-            <input placeholder="Enter link here" />
+            <input
+              value={nameOfLink3}
+              onChange={(e) =>
+                setNameOfLinks([nameOfLink1, nameOfLink2, e.target.value])
+              }
+              placeholder="Enter name of link 3"
+            />
+            <input
+              value={link3}
+              onChange={(e) => setLink([link1, link2, e.target.value])}
+              placeholder="Enter link here"
+            />
           </div>
         </div>
         <nav>
-          <ul className="ghost__navList">
-            <li className="ghost__navStart">
-              <a href={link1}>LINK 1</a>
-              <a href={link2}>LINK 2</a>
-              <a href={link3}>LINK 3</a>
+          <ul className="nav1__navList">
+            <li className="nav1__navStart">
+              <a href={link1}>{nameOfLink1}</a>
+              <a href={link2}>{nameOfLink2}</a>
+              <a href={link3}>{nameOfLink3}</a>
             </li>
-            <li className="ghost__navEnd">
+            <li className="nav1__navEnd">
               <span>
-                <a href="#">
-                  <img
-                    src="https://github.com/rohan9896/Testing-for-CSS-component-library/blob/main/icons/navbar%20component/facebook-brands.png?raw=true"
-                    alt="fb"
-                  ></img>
-                </a>
-              </span>
-              <span>
-                <a href="#">
-                  <img
-                    src="https://github.com/rohan9896/Testing-for-CSS-component-library/blob/main/icons/navbar%20component/twitter-brands.png?raw=true"
-                    alt="twitter"
-                  ></img>
-                </a>
-              </span>
-              <span>
-                <a href="#">
-                  <img
-                    src="https://github.com/rohan9896/Testing-for-CSS-component-library/blob/main/icons/navbar%20component/linkedin.png?raw=true"
-                    alt="linkedin"
-                  ></img>
-                </a>
+                <input type="text" placeholder="🔎Search" />
               </span>
               <span>
                 <button>LOG IN</button>
@@ -66,6 +80,46 @@ function Navbar() {
             </li>
           </ul>
         </nav>
+        <div className="codeContainer">
+          <p>{`<nav>
+      <ul class="nav1__navList">
+          <li class="nav1__navStart">
+              <a href="${link1}">${nameOfLink1}</a>
+              <a href="${link2}">${nameOfLink2}</a>
+              <a href="${link3}">${nameOfLink3}</a>
+          </li>
+          <li class="nav1__navEnd">
+              <span>
+                <input type="text" placeholder="🔎Search" />
+              </span>
+              <span><button>LOG IN</button></span>
+          </li>
+      </ul>
+  </nav>`}</p>
+          <button
+            onClick={() =>
+              navigator.clipboard.writeText(
+                `<nav>
+                <ul class="nav1__navList">
+                    <li class="nav1__navStart">
+                        <a href="${link1}">${nameOfLink1}</a>
+                        <a href="${link2}">${nameOfLink2}</a>
+                        <a href="${link3}">${nameOfLink3}</a>
+                    </li>
+                    <li class="nav1__navEnd">
+                        <span>
+                          <input type="text" placeholder="🔎Search" />
+                        </span>
+                        <span><button>LOG IN</button></span>
+                    </li>
+                </ul>
+            </nav>`
+              )
+            }
+          >
+            Copy
+          </button>
+        </div>
       </div>
     </div>
   );

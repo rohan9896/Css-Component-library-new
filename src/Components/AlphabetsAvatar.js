@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../base.css";
 import "./AlphabetsAvatar.css";
 import "./codecontainer.css";
+import './Heading.css'
 
 const alphabets = [...Array(26)].map((alphabetsObj, index) => {
   return {
@@ -16,7 +17,7 @@ function AlphabetsAvatar() {
 
   return (
     <div className="alphabetAvatar">
-      <h2>Alphabets Avatar</h2>
+      <h1 className='title'>Alphabets Avatar</h1>
       <h3>Select backgroundColor from here: </h3>
       <input
         type="color"
