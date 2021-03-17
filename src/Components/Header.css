@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Sacramento&family=Special+Elite&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Coming+Soon&family=Monoton&family=Nanum+Pen+Script&display=swap");
 
 .header__nav {
   background-color: black;
@@ -11,10 +11,12 @@
   padding: 1rem;
 }
 
-.header > span {
-  font-family: "Sacramento", cursive;
-  font-family: "Special Elite", cursive;
-  font-size: x-large;
+.header__nav > span {
+    font-family: 'Coming Soon', cursive;
+    font-family: 'Monoton', cursive;
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: xx-large;
+
 }
 
 .header__DesktopList > li > a {
@@ -29,28 +31,28 @@
 }
 
 .hamburger-button {
-    display: none;
+  display: none;
 }
 
 @media screen and (max-width: 930px) {
-    .header__DesktopList {
-        display: none;
-    }
-    .hamburger-button {
-        display: flex;
-    }
-    .header__mobileList {
-        list-style-type: none;
-        margin: 0;
-        padding: 1.5rem;
-        background-color: black;
-    }
-    .header__mobileList > li {
-        margin: 1rem;
-    }
-    .header__mobileList > li > a {
-        text-decoration: none;
-        color: white;
-        font-size: larger;
-    }
+  .header__DesktopList {
+    display: none;
+  }
+  .hamburger-button {
+    display: flex;
+  }
+  .header__mobileList {
+    list-style-type: none;
+    margin: 0;
+    padding: 1.5rem;
+    background-color: black;
+  }
+  .header__mobileList > li {
+    margin: 1rem;
+  }
+  .header__mobileList > li > a {
+    text-decoration: none;
+    color: white;
+    font-size: larger;
+  }
 }

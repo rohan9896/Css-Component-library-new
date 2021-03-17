@@ -16,7 +16,7 @@ function Header() {
             <a href="http://github.com/">Components List</a>
           </li>
           <li>
-            <a href="http://github.com/">Feedback</a>
+            <a href="https://forms.gle/CQxEYUv8YDQBsayV7">Feedback</a>
           </li>
           <li>
             <a href="http://github.com/">Git Repo</a>
@@ -42,7 +42,7 @@ function Header() {
               <a href="http://github.com/">Components List</a>
             </li>
             <li>
-              <a href="http://github.com/">Feedback</a>
+              <a href="https://forms.gle/CQxEYUv8YDQBsayV7">Feedback</a>
             </li>
             <li>
               <a href="http://github.com/">Git Repo</a>
