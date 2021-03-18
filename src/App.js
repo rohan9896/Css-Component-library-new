@@ -21,7 +21,8 @@ function App() {
             <p>Add this line in a css file - @import url("https://effortlessui.netlify.app/base.css")</p>
             <p>Link that css file to your html document</p>
             <p>Go to components list from nav bar to see the components</p>
-            <p>Rest of the getting started docs goes here.....</p>
+            <p>Customize the components according to your needs from site itself</p>
+            <h1>Rest of the getting started docs goes here.....</h1>
           </Route>
           <Route path="/componentslist">
             <Buttons />
