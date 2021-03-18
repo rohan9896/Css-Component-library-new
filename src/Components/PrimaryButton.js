@@ -43,7 +43,7 @@ const colors = [
   },
   {
     id: 10,
-    colorName: `grey`,
+    colorName: `maroon`,
   },
 ];
 

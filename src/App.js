@@ -6,6 +6,7 @@ import AlphabetsAvatar from './Components/AlphabetsAvatar'
 import Alert from './Components/Alert'
 import Navbar from './Components/Navbar'
 import Header from './Components/Header'
+import SocialMediaIcon from './Components/SocialIcon'
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
       <hr />
       <Navbar />
       <hr />
+      <SocialMediaIcon />
     </div>
   );
 }

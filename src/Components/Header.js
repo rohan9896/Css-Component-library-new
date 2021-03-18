@@ -19,7 +19,7 @@ function Header() {
             <a href="https://forms.gle/CQxEYUv8YDQBsayV7">Feedback</a>
           </li>
           <li>
-            <a href="http://github.com/">Git Repo</a>
+            <a href="https://github.com/rohan9896/EffortlessUI">Git Repo</a>
           </li>
         </ul>
         <button
@@ -45,7 +45,7 @@ function Header() {
               <a href="https://forms.gle/CQxEYUv8YDQBsayV7">Feedback</a>
             </li>
             <li>
-              <a href="http://github.com/">Git Repo</a>
+              <a href="https://github.com/rohan9896/EffortlessUI">Git Repo</a>
             </li>
           </ul>
         )}

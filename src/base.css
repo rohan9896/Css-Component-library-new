@@ -10,6 +10,7 @@
   --orange: #fb641b;
   --greenishBlue: #17a2b8;
   --grey: #f0e9e6;
+  --maroon: #cd486b;
 }
 
 
@@ -53,6 +54,9 @@
 .primary-button.grey {
   background-color: var(--grey);
 }
+.primary-button.maroon {
+  background-color: var(--maroon);
+}
 
 
 /* icon button */
@@ -67,6 +71,11 @@
   width: 30px;
 }
 
+/* social media icon */
+.socialIcon > img {
+  height: 3rem;
+  width: 3rem;
+}
 
 /* Avatar */
 .faceavatar {
