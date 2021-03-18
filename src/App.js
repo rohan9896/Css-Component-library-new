@@ -7,6 +7,7 @@ import Alert from './Components/Alert'
 import Navbar from './Components/Navbar'
 import Header from './Components/Header'
 import SocialMediaIcon from './Components/SocialIcon'
+import Footer from './Components/Footer'
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
       <hr />
       <SocialMediaIcon />
       <hr />
+      <Footer />
     </div>
   );
 }

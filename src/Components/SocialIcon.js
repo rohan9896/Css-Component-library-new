@@ -61,6 +61,20 @@ const icons = [
     name: "youtube",
     link: "",
   },
+  {
+    id: 9,
+    img:
+      "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/96c0f29d88447b22f4e2c1fde37458cef5e2b412/icons/social%20icon/twitter.svg",
+    name: "twitter",
+    link: "",
+  },
+  {
+    id: 10,
+    img:
+      "https://github.com/rohan9896/Testing-for-CSS-component-library/blob/main/icons/social%20icon/medium.png?raw=true",
+    name: "medium",
+    link: "",
+  },
 ];
 
 function SocialIcon() {

@@ -1,0 +1,16 @@
+.footer {
+    padding: 1rem;
+    color: white;
+    background-color: black;
+  }
+  
+  .footer__socialList {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .footer__socialList > li {
+    margin: 1.5rem;
+  }
+  
