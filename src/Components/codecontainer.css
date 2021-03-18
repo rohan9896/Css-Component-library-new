@@ -11,6 +11,8 @@
 .codeContainer > p {
   font-family: 'Shippori Mincho B1', serif;
   color: red;
+  max-width: 100%;
+  overflow-wrap: break-word;
 }
 
 .codeContainer > button {
@@ -34,7 +36,7 @@
   .codeContainer {
     margin: 0;
   }
-  p {
-    word-wrap: break-word;
-  }
+  /* p {
+    overflow-wrap: break-word;
+  } */
 }
