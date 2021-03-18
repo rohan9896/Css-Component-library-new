@@ -84,7 +84,7 @@ function SocialIcon() {
           })}
         </ul>
         <button onClick={() => setChangeLinkClicked(!changeLinkClicked)}>
-          {changeLinkClicked ? "Hide textarea" : "Add Link"}
+          {changeLinkClicked ? "Hide textarea" : "Add Link URL"}
         </button>
         {changeLinkClicked && (
           <textarea
