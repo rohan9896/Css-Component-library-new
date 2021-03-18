@@ -20,6 +20,7 @@ function App() {
           <Route path="/" exact>
             <p>Add this line in a css file - @import url("https://effortlessui.netlify.app/base.css")</p>
             <p>Link that css file to your html document</p>
+            <p>Go to components list from nav bar to see the components</p>
             <p>Rest of the getting started docs goes here.....</p>
           </Route>
           <Route path="/componentslist">
