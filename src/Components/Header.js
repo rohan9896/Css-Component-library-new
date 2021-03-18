@@ -10,10 +10,10 @@ function Header() {
         <span>🧿EFFORTLESS UI</span>
         <ul className="header__DesktopList">
           <li>
-            <a href="http://github.com/">Getting Started</a>
+            <a href="/">Getting Started</a>
           </li>
           <li>
-            <a href="http://github.com/">Components List</a>
+            <a href="/componentslist">Components List</a>
           </li>
           <li>
             <a href="https://forms.gle/CQxEYUv8YDQBsayV7">Feedback</a>
