@@ -19,7 +19,7 @@
 
 }
 
-.header__DesktopList > li > a {
+.header__DesktopList > li > Link, a {
   text-decoration: none;
   color: white;
   margin: 0 1rem;

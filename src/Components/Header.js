@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Header.css";
 import "../base.css";
+import { Link } from "react-router-dom";
 
 function Header() {
   const [hamburgerClicked, setHamburgerClicked] = useState(false);
@@ -10,10 +11,10 @@ function Header() {
         <span>🧿EFFORTLESS UI</span>
         <ul className="header__DesktopList">
           <li>
-            <a href="/">Getting Started</a>
+            <Link to="/">Getting Started</Link>
           </li>
           <li>
-            <a href="/componentslist">Components List</a>
+            <Link to="/componentslist">Components List</Link>
           </li>
           <li>
             <a href="https://forms.gle/CQxEYUv8YDQBsayV7">Feedback</a>
@@ -34,21 +35,21 @@ function Header() {
         </button>
       </nav>
       {hamburgerClicked && (
-          <ul className='header__mobileList'>
-            <li>
-              <a href="http://github.com/">Getting Started</a>
-            </li>
-            <li>
-              <a href="http://github.com/">Components List</a>
-            </li>
-            <li>
-              <a href="https://forms.gle/CQxEYUv8YDQBsayV7">Feedback</a>
-            </li>
-            <li>
-              <a href="https://github.com/rohan9896/EffortlessUI">Git Repo</a>
-            </li>
-          </ul>
-        )}
+        <ul className="header__mobileList">
+          <li>
+          <Link to="/">Getting Started</Link>
+          </li>
+          <li>
+          <Link to="/componentslist">Components List</Link>
+          </li>
+          <li>
+            <a href="https://forms.gle/CQxEYUv8YDQBsayV7">Feedback</a>
+          </li>
+          <li>
+            <a href="https://github.com/rohan9896/EffortlessUI">Git Repo</a>
+          </li>
+        </ul>
+      )}
     </div>
   );
 }
