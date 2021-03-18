@@ -17,10 +17,22 @@ function Header() {
             <Link to="/componentslist">Components List</Link>
           </li>
           <li>
-            <a href="https://forms.gle/CQxEYUv8YDQBsayV7">Feedback</a>
+            <a
+              rel="noreferrer"
+              href="https://forms.gle/CQxEYUv8YDQBsayV7"
+              target="_blank"
+            >
+              Feedback
+            </a>
           </li>
           <li>
-            <a href="https://github.com/rohan9896/EffortlessUI">Git Repo</a>
+            <a
+              rel="noreferrer"
+              href="https://github.com/rohan9896/EffortlessUI"
+              target="_blank"
+            >
+              Git Repo
+            </a>
           </li>
         </ul>
         <button
@@ -37,16 +49,28 @@ function Header() {
       {hamburgerClicked && (
         <ul className="header__mobileList">
           <li>
-          <Link to="/">Getting Started</Link>
+            <Link to="/">Getting Started</Link>
           </li>
           <li>
-          <Link to="/componentslist">Components List</Link>
+            <Link to="/componentslist">Components List</Link>
           </li>
           <li>
-            <a href="https://forms.gle/CQxEYUv8YDQBsayV7">Feedback</a>
+            <a
+              rel="noreferrer"
+              href="https://forms.gle/CQxEYUv8YDQBsayV7"
+              target="_blank"
+            >
+              Feedback
+            </a>
           </li>
           <li>
-            <a href="https://github.com/rohan9896/EffortlessUI">Git Repo</a>
+            <a
+              rel="noreferrer"
+              href="https://github.com/rohan9896/EffortlessUI"
+              target="_blank"
+            >
+              Git Repo
+            </a>
           </li>
         </ul>
       )}
