@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../base.css";
 import "./Navbar.css";
-import "./codecontainer.css";
 import './Heading.css'
+import CodeContainer from './CodeContainer'
 
 function Navbar() {
   const [[link1, link2, link3], setLink] = useState(["", "", ""]);
@@ -11,6 +11,8 @@ function Navbar() {
     "Name2",
     "Name3",
   ]);
+
+  const copyCode = `<nav><ul class="nav1__navList"><li class="nav1__navStart"><a href="${link1}">${nameOfLink1}</a><a href="${link2}">${nameOfLink2}</a><a href="${link3}">${nameOfLink3}</a></li><li class="nav1__navEnd"><span><input type="text" placeholder="🔎Search" /></span><span><button>LOG IN</button></span></li></ul></nav>`;
 
   return (
     <div>
@@ -80,46 +82,7 @@ function Navbar() {
             </li>
           </ul>
         </nav>
-        <div className="codeContainer">
-          <p>{`<nav>
-      <ul class="nav1__navList">
-          <li class="nav1__navStart">
-              <a href="${link1}">${nameOfLink1}</a>
-              <a href="${link2}">${nameOfLink2}</a>
-              <a href="${link3}">${nameOfLink3}</a>
-          </li>
-          <li class="nav1__navEnd">
-              <span>
-                <input type="text" placeholder="🔎Search" />
-              </span>
-              <span><button>LOG IN</button></span>
-          </li>
-      </ul>
-  </nav>`}</p>
-          <button
-            onClick={() =>
-              navigator.clipboard.writeText(
-                `<nav>
-                <ul class="nav1__navList">
-                    <li class="nav1__navStart">
-                        <a href="${link1}">${nameOfLink1}</a>
-                        <a href="${link2}">${nameOfLink2}</a>
-                        <a href="${link3}">${nameOfLink3}</a>
-                    </li>
-                    <li class="nav1__navEnd">
-                        <span>
-                          <input type="text" placeholder="🔎Search" />
-                        </span>
-                        <span><button>LOG IN</button></span>
-                    </li>
-                </ul>
-            </nav>`
-              )
-            }
-          >
-            Copy
-          </button>
-        </div>
+        <CodeContainer codeForCopy={copyCode} />
       </div>
     </div>
   );

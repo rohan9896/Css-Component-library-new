@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../base.css";
 import "./Alert.css";
-import "./codecontainer.css";
-import './Heading.css'
+import CodeContainer from "./CodeContainer";
+import "./Heading.css";
 
 const alerts = [
   {
@@ -37,9 +37,22 @@ const alerts = [
 
 function Alert() {
   const [alert, setAlert] = useState(alerts[0]);
+
+  const copyCode = `<div class="alert">
+  <div class="alertIcon ${alert.name}">
+    <img src="${alert.img}" />
+  </div>
+  <div class="alertText ${alert.name}">
+    <div>
+      <span>${alert.displayText}</span>
+    </div>
+    <span class="cross">X</span>
+  </div>
+</div>`;
+
   return (
     <div>
-      <h1 className='title'>Alerts</h1>
+      <h1 className="title">Alerts</h1>
       <ul className="alert__list">
         {alerts.map((alertObj) => {
           return (
@@ -61,36 +74,7 @@ function Alert() {
           );
         })}
       </ul>
-      <div className="codeContainer">
-        <p>{`<div class="alert">
-        <div class="alertIcon ${alert.name}">
-          <img src="${alert.img}" />
-        </div>
-        <div class="alertText ${alert.name}">
-          <div>
-            <span>${alert.displayText}</span>
-          </div>
-          <span class="cross">X</span>
-        </div>
-      </div>`}</p>
-        <button
-          onClick={() =>
-            navigator.clipboard.writeText(`<div class="alert">
-        <div class="alertIcon ${alert.name}">
-          <img src="${alert.img}" />
-        </div>
-        <div class="alertText ${alert.name}">
-          <div>
-            <span>${alert.displayText}</span>
-          </div>
-          <span class="cross">X</span>
-        </div>
-      </div>`)
-          }
-        >
-          Copy
-        </button>
-      </div>
+      <CodeContainer codeForCopy={copyCode} />
     </div>
   );
 }

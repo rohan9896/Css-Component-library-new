@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import "../base.css";
 import "./FaceAvatar.css";
-import './codecontainer.css';
+// import './codecontainer.css';
 import './Heading.css'
+import CodeContainer from './CodeContainer';
 
 const faceAvatars = [
   {
@@ -37,12 +38,15 @@ const faceAvatars = [
   },
 ];
 
+
 function FaceAvatar() {
   const [faceAvatarImage, setFaceAvatarImage] = useState(
     `https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/4d0222bc00ff03f8dac8b8c35431062c89807b4a/icons/avatar%20component/avatarUser.svg`
   );
   const [ownPhotoClicked, setOwnPhotoClicked] = useState(false);
   const [linkVal, setLinkVal] = useState('');
+
+  const copyCode = `<img class="faceavatar" src="${ownPhotoClicked ? linkVal : faceAvatarImage}" alt="avatar" />`;
 
   return (
     <div>
@@ -65,10 +69,7 @@ function FaceAvatar() {
       {
           ownPhotoClicked && <textarea value={linkVal} onChange={(e) => setLinkVal(e.target.value)} placeholder='enter link of your avatar image'></textarea>
       }
-      <div className="codeContainer">
-        <p>{`<img class="faceavatar" src="${ownPhotoClicked ? linkVal : faceAvatarImage}" alt="avatar" />`}</p>
-        <button onClick={() => navigator.clipboard.writeText(`<img class="faceavatar" src="${ownPhotoClicked ? linkVal : faceAvatarImage}" alt="avatar" />`)}>Copy</button>
-      </div>
+      <CodeContainer codeForCopy={copyCode}  />
     </div>
   );
 }

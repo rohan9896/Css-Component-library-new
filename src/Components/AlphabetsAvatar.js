@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../base.css";
 import "./AlphabetsAvatar.css";
-import "./codecontainer.css";
 import './Heading.css'
+import CodeContainer from "./CodeContainer"
 
 const alphabets = [...Array(26)].map((alphabetsObj, index) => {
   return {
@@ -14,6 +14,8 @@ const alphabets = [...Array(26)].map((alphabetsObj, index) => {
 function AlphabetsAvatar() {
   const [avatarBgColor, setAvatarBgColor] = useState("#2874f0");
   const [selectedAlphabet, setSelectedAlphabet] = useState("A");
+
+  const copyCode = `<div style="background-color: ${avatarBgColor};" class="avatar-alphabet"><span>${selectedAlphabet}</span></div>`;
 
   return (
     <div className="alphabetAvatar">
@@ -43,17 +45,7 @@ function AlphabetsAvatar() {
           );
         })}
       </ul>
-      <div className="codeContainer">
-        <p>{`<div style="background-color: ${avatarBgColor};" class="avatar-alphabet"><span>${selectedAlphabet}</span></div>`}</p>
-        <button
-          onClick={() =>
-            navigator.clipboard
-              .writeText(`<div style="background-color: ${avatarBgColor};" class="avatar-alphabet"><span>${selectedAlphabet}</span></div>`)
-          }
-        >
-          Copy
-        </button>
-      </div>
+      <CodeContainer codeForCopy={copyCode} />
     </div>
   );
 }

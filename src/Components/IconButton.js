@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "../base.css"
 import "./IconButton.css";
-import './codecontainer.css';
 import './Heading.css'
+import CodeContainer from './CodeContainer'
 
 const icons = [
   {
@@ -44,6 +44,8 @@ function IconButton() {
   const [ownIconClicked, setownIconClicked] = useState(false);
   const [linkVal, setlinkVal] = useState('');
 
+  const copyCode = `<button class="icon-button"><img src="${ownIconClicked ? linkVal : iconImg}" /></button>`;
+
   return (
     <div>
       <h2 className='subtitle'>Icon Buttons</h2>
@@ -63,77 +65,9 @@ function IconButton() {
         <button onClick={() => setownIconClicked(!ownIconClicked)}>Add your own icon</button>
       </ul>
       {ownIconClicked && <textarea value={linkVal} onChange={(e) => setlinkVal(e.target.value)} placeholder="enter link of your icon image"></textarea>}
-      <div className="codeContainer">
-        <p>{`<button class="icon-button"><img src="${ownIconClicked ? linkVal : iconImg}" /></button>`}</p>
-        <button
-          onClick={() =>
-            navigator.clipboard.writeText(
-              `<button class="icon-button"><img src="${ownIconClicked ? linkVal : iconImg}" /></button>`
-            )
-          }
-        >
-          Copy
-        </button>
-      </div>
+      <CodeContainer codeForCopy={copyCode} />
     </div>
   );
 }
 
 export default IconButton;
-
-// function IconButton() {
-
-//   // const [iconsObj, setIconsObj] = useState(icons);
-//   const [img, setImg] = useState()
-
-//   return (
-//     <div>
-//       <h2>Icons Buttons</h2>
-//       <div className="iconButton__buttonContainer">
-//         <button className="icon-button" onClick={() => }>
-//           <img
-//             alt="icon"
-//             src="https://raw.githubusercontent.com/rohan9896/CSS-component-library/0c5b4503814556a48beebd849585d17afb142e06/icons/left-arrow.svg"
-//           />
-//         </button>
-//         <button className="icon-button">
-//           <img
-//             alt="icon"
-//             src="https://raw.githubusercontent.com/rohan9896/CSS-component-library/0c5b4503814556a48beebd849585d17afb142e06/icons/rightArrow.svg"
-//           />
-//         </button>
-//         <button class="icon-button">
-//           <img
-//             alt="icon"
-//             src="https://raw.githubusercontent.com/rohan9896/CSS-component-library/eae5ccfe00eabccae185a910d6a29a36f8feb893/icons/cancel.svg"
-//           />
-//         </button>
-//         <button class="icon-button">
-//           <img
-//             alt="icon"
-//             src="https://raw.githubusercontent.com/rohan9896/CSS-component-library/ad81ebf5b89717f278f85a1970c851520dfa6768/icons/check.svg"
-//           />
-//         </button>
-//         <button class="icon-button">
-//           <img
-//             alt="icon"
-//             src="https://raw.githubusercontent.com/rohan9896/CSS-component-library/eae5ccfe00eabccae185a910d6a29a36f8feb893/icons/trash.svg"
-//           />
-//         </button>
-//       </div>
-//       <div className="iconButton__codeContainer">
-//         <p>{`<button class="icon-button"><img src="${img}" /></button>`}</p>
-//         <button
-//           onClick={() =>
-//             navigator.clipboard.writeText(
-//               `<button class="icon-button"><img src="${img}" /></button>`
-//             )
-//           }
-//         >
-//           Copy
-//         </button>
-//       </div>
-//     </div>
-//   );
-// }
-

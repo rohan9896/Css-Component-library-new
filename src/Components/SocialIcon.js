@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "../base.css";
 import "./SocialIcon.css";
 import "./Heading.css";
-import "./codecontainer.css";
+import CodeContainer from './CodeContainer'
 
 const icons = [
   {
@@ -82,6 +82,8 @@ function SocialIcon() {
   const [changeLinkClicked, setChangeLinkClicked] = useState(false);
   const [linkVal, setlinkVal] = useState("");
 
+  const copyCode = `<a class='socialIcon' href="${linkVal}"><img src="${icon.img}" alt="${icon.name}" /></a>`;
+
   return (
     <div>
       <div className="socialIcon">
@@ -108,21 +110,7 @@ function SocialIcon() {
           ></textarea>
         )}
       </div>
-      <div className="codeContainer">
-        <p>{`<a class='socialIcon' href="${linkVal}">
-            <img src="${icon.img}" alt="${icon.name}" />
-            </a>`}</p>
-        <button
-          onClick={() =>
-            navigator.clipboard.writeText(
-              `<a class='socialIcon' href="${linkVal}"><img src="${icon.img}" alt="${icon.name}" /></a>`
-            )
-          }
-        >
-          Copy
-        </button>
-      </div>
-      ;
+      <CodeContainer codeForCopy={copyCode} />
     </div>
   );
 }
