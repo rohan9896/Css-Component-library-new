@@ -11,6 +11,7 @@ import SocialMediaIcon from "./Components/SocialIcon";
 import Footer from "./Components/Footer";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import DocsHeader from "./Components/DocsHeader";
+import GettingStarted from "./Components/GettingStarted";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Switch>
           <Route path="/" exact>
             <DocsHeader />
+            <GettingStarted />
             <p>Add this line in a css file - @import url("https://effortlessui.netlify.app/base.css")</p>
             <p>Link that css file to your html document</p>
             <p>Go to components list from nav bar to see the components</p>
