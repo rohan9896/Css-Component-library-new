@@ -3,6 +3,7 @@ import "../base.css";
 import "./PrimaryButton.css";
 import "./Heading.css";
 import CodeContainer from './CodeContainer'
+import Description from "./Description";
 
 const colors = [
   {
@@ -47,7 +48,6 @@ const colors = [
   },
 ];
 
-// const test = `primary-button pink`; {test}
 
 function PrimaryButton() {
   const [buttonColorCode, setButtonColorCode] = useState(`blue`);
@@ -58,14 +58,17 @@ function PrimaryButton() {
     ? `<a href="${linkVal}" role="button"><button class="primary-button  ${buttonColorCode}">Link Button</button></a>`
     : `<button class="primary-button ${buttonColorCode}">Normal Button</button>`;
 
+    const description = linkButtonClicked ? `A Link Button which can be used to trigger a link based on click event. You can add the link below.` : `A Normal Button which can be formatted to perform any action based on click event.`
+
   return (
     <div>
       <div className="primaryButton__headingContainer">
-        <h2 className="subtitle">Primary Button</h2>
+        <h2 className="title">Primary Button</h2>
         <button onClick={() => setLinkButtonClicked(!linkButtonClicked)}>
           {linkButtonClicked ? "Hide Link Button" : "Add Link Button"}
         </button>
       </div>
+      <Description desc={description} />
       {linkButtonClicked && (
         <textarea
           placeholder="enter link here"

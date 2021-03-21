@@ -3,6 +3,7 @@ import "../base.css"
 import "./IconButton.css";
 import './Heading.css'
 import CodeContainer from './CodeContainer'
+import Description from "./Description";
 
 const icons = [
   {
@@ -46,9 +47,14 @@ function IconButton() {
 
   const copyCode = `<button class="icon-button"><img src="${ownIconClicked ? linkVal : iconImg}" /></button>`;
 
+  const description = `Icon buttons are commonly found in app bars and toolbars.
+  Icons are also appropriate for toggle buttons that allow a single choice to be selected or deselected.
+  You can also add your own image by clicking 'Add your own icon' button and pasting the link of image you want to add.`
+
   return (
     <div>
-      <h2 className='subtitle'>Icon Buttons</h2>
+      <h2 className='title'>Icon Buttons</h2>
+      <Description desc={description} />
       <ul className="iconButton__buttonList">
         {icons.map((iconObj) => {
           return (
