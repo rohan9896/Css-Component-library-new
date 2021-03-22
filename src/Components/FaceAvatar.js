@@ -50,7 +50,7 @@ function FaceAvatar() {
 
   return (
     <div>
-      <h1 className='title'>Face Avatars</h1>
+      <h2 className='title'>Face Avatars</h2>
       <ul className="faceavatar__list">
         {faceAvatars.map((faceAvatarObj) => {
           return (

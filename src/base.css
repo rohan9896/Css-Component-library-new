@@ -204,3 +204,51 @@
     display: none;
   }
 }
+
+
+.primaryInput {
+  padding: 0.75rem 1rem;
+  font-size: 100%;
+  border-radius: 0.3rem;
+  outline: none;
+  border: solid 2px var(--grey);
+  max-width: 50%;
+  width: 400px;
+}
+
+.focus:focus{
+  border: var(--blue) solid 2px;
+}
+
+.roundInput {
+  padding: 0.75rem 1rem;
+  font-size: 100%;
+  border-radius: 2rem;
+  outline: none;
+  border: solid 2px var(--grey);
+  max-width: 50%;
+  width: 400px;
+}
+
+.searchInput {
+  padding: 0.75rem 1rem;
+  font-size: 100%;
+  border-radius: 0.3rem;
+  outline: none;
+  border: solid 2px var(--grey);
+  max-width: 50%;
+  width: 100px;
+}
+
+.searchInput:focus  {
+  width: 300px;
+}
+
+.inputWithIcon {
+  display: flex;
+  align-items: center;
+}
+
+.inputWithIcon > img {
+  height: 2rem;
+}

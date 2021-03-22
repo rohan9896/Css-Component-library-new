@@ -22,6 +22,7 @@ function Navbar() {
           <div className="navbar__linkInput">
             <p>Link 1: </p>
             <input
+              className='roundInput focus'
               value={nameOfLink1}
               onChange={(e) =>
                 setNameOfLinks([e.target.value, nameOfLink2, nameOfLink3])
@@ -29,6 +30,7 @@ function Navbar() {
               placeholder="Enter name of link 1"
             />
             <input
+              className='roundInput focus'
               value={link1}
               onChange={(e) => setLink([e.target.value, link2, link3])}
               placeholder="Enter link here"
@@ -37,6 +39,7 @@ function Navbar() {
           <div className="navbar__linkInput">
             <p>Link 2: </p>
             <input
+              className='roundInput focus'
               value={nameOfLink2}
               onChange={(e) =>
                 setNameOfLinks([nameOfLink1, e.target.value, nameOfLink3])
@@ -44,6 +47,7 @@ function Navbar() {
               placeholder="Enter name of link 2"
             />
             <input
+              className='roundInput focus'
               value={link2}
               onChange={(e) => setLink([link1, e.target.value, link3])}
               placeholder="Enter link here"
@@ -52,6 +56,7 @@ function Navbar() {
           <div className="navbar__linkInput">
             <p>Link 3: </p>
             <input
+              className='roundInput focus'
               value={nameOfLink3}
               onChange={(e) =>
                 setNameOfLinks([nameOfLink1, nameOfLink2, e.target.value])
@@ -59,6 +64,7 @@ function Navbar() {
               placeholder="Enter name of link 3"
             />
             <input
+              className='roundInput focus'
               value={link3}
               onChange={(e) => setLink([link1, link2, e.target.value])}
               placeholder="Enter link here"
@@ -77,7 +83,7 @@ function Navbar() {
                 <input type="text" placeholder="🔎Search" />
               </span>
               <span>
-                <button>LOG IN</button>
+                <button>LOGIN</button>
               </span>
             </li>
           </ul>

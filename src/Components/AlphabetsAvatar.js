@@ -19,7 +19,7 @@ function AlphabetsAvatar() {
 
   return (
     <div className="alphabetAvatar">
-      <h1 className='title'>Alphabets Avatar</h1>
+      <h2 className='title'>Alphabets Avatar</h2>
       <h3>Select backgroundColor from here: </h3>
       <input
         type="color"
