@@ -2,6 +2,7 @@ import React from "react";
 import "../base.css";
 import "./Card.css";
 import CodeContainer from "./CodeContainer";
+import Description from "./Description";
 import "./Heading.css";
 
 function Card() {
@@ -29,6 +30,7 @@ function Card() {
   return (
     <div className="Card__container">
       <h1 className="title">Cards</h1>
+      <Description desc="Card is used to display information about any person/product/etc." />
       <div className="card">
         <img
           alt="model"

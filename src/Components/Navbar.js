@@ -3,6 +3,7 @@ import "../base.css";
 import "./Navbar.css";
 import './Heading.css'
 import CodeContainer from './CodeContainer'
+import Description from "./Description";
 
 function Navbar() {
   const [[link1, link2, link3], setLink] = useState(["", "", ""]);
@@ -18,6 +19,7 @@ function Navbar() {
     <div>
       <div className="Navbar__container">
         <h1 className='title'>Navbars</h1>
+        <Description desc="A Navigation bar (or navigation bar) is a section usually placed at the top of the website, contains all the links to navigate through the website." />
         <div>
           <div className="navbar__linkInput">
             <p>Link 1: </p>

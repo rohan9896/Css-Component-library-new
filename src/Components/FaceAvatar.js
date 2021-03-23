@@ -4,6 +4,7 @@ import "./FaceAvatar.css";
 // import './codecontainer.css';
 import './Heading.css'
 import CodeContainer from './CodeContainer';
+import Description from "./Description";
 
 const faceAvatars = [
   {
@@ -51,6 +52,7 @@ function FaceAvatar() {
   return (
     <div>
       <h2 className='title'>Face Avatars</h2>
+      <Description desc="Face Avatar is used to portray a user. You can also add your own image by clicking 'Add Your Own Image' button and pasting the link in textbox." />
       <ul className="faceavatar__list">
         {faceAvatars.map((faceAvatarObj) => {
           return (

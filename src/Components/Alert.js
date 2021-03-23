@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../base.css";
 import "./Alert.css";
 import CodeContainer from "./CodeContainer";
+import Description from "./Description";
 import "./Heading.css";
 
 const alerts = [
@@ -53,6 +54,7 @@ function Alert() {
   return (
     <div>
       <h1 className="title">Alerts</h1>
+      <Description desc="An alert displays a short, important message in a way that attracts the user's attention without interrupting the user's task." />
       <ul className="alert__list">
         {alerts.map((alertObj) => {
           return (

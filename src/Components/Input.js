@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "../base.css";
 import CodeContainer from "./CodeContainer";
+import Description from "./Description";
 import "./Heading.css";
 import "./Input.css";
 
@@ -49,6 +50,7 @@ function Input() {
       <div className="input__headingContainer">
         <h1 className="title">Input Field</h1>
       </div>
+      <Description desc="Input Fields can be used to take input from the user of anytype(text/password/email/phone no/etc)." />
       <ul className="input__list">
         {
           inputs.map(inputObj => {

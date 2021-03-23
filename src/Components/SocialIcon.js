@@ -3,6 +3,7 @@ import "../base.css";
 import "./SocialIcon.css";
 import "./Heading.css";
 import CodeContainer from './CodeContainer'
+import Description from "./Description";
 
 const icons = [
   {
@@ -88,6 +89,7 @@ function SocialIcon() {
     <div>
       <div className="socialIcon">
         <h1 className="title">Social Media Icons</h1>
+        <Description desc="Social Media Icons can be used for adding social media links in 'contact me' section of any website." />
         <ul className="socialIcon__list">
           {icons.map((iconObj) => {
             return (
