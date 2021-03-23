@@ -1,19 +1,69 @@
-import React from "react";
+import React, { useState } from "react";
 import "../base.css";
+import CodeContainer from "./CodeContainer";
 import "./Heading.css";
 import "./Input.css";
 
+
+const inputs = [
+  {
+    id: 1,
+    type: "text",
+    class: "primaryInput",
+    placeholder: "Primary Input"
+  },
+  {
+    id: 2,
+    type: "text",
+    class: "primaryInput focus",
+    placeholder: "Primary Input With Border Color"
+  },
+  {
+    id: 3,
+    type: "text",
+    class: "roundInput",
+    placeholder: "Round Input"
+  },
+  {
+    id: 4,
+    type: "text",
+    class: "searchInput",
+    placeholder: "🔍 Search..."
+  },
+  {
+    id: 5,
+    type: "password",
+    class: 'passwordInput',
+    placeholder: 'Enter password here'
+  },
+]
+
 function Input() {
+
+  const [input, setInput] = useState(inputs[0]);
+
+  const copyCode = `<input type="${input.type}" class="${input.class}" placeholder="${input.placeholder}" />`
+
   return (
-    <div className="input__container">
-      <h1 className="title">Input Field</h1>
-      <h1>XXXXXX------- WORK IN PROGRESS --------XXXXXX</h1>
-      <input type="text" className="primaryInput" placeholder="Primary Input" />
-      <input type="text" className="primaryInput focus" placeholder="Primary Input With Border Color" />
-      <input type="text" className="roundInput" placeholder="Round Input" />
-      <input type="text" className="searchInput" placeholder="🔍 Search..." />
+    <div>
+      <div className="input__headingContainer">
+        <h1 className="title">Input Field</h1>
+      </div>
+      <ul className="input__list">
+        {
+          inputs.map(inputObj => {
+            return (
+              <li onClick={() => setInput(inputObj)} key={inputObj.id}>
+                <input type={inputObj.type} className={inputObj.class} placeholder={inputObj.placeholder} />
+              </li>
+            )
+          })
+        }
+      </ul>
+      <CodeContainer codeForCopy={copyCode} />
     </div>
   );
 }
 
 export default Input;
+

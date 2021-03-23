@@ -176,7 +176,7 @@
 }
 
 .nav1__navStart > a {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
   text-decoration: none;
   color: inherit;
 }
@@ -203,4 +203,53 @@
   .nav1__navEnd > span > input {
     display: none;
   }
+}
+
+
+.primaryInput {
+  padding: 0.75rem 1rem;
+  font-size: 100%;
+  border-radius: 0.3rem;
+  outline: none;
+  border: solid 2px var(--grey);
+  max-width: 50%;
+  width: 400px;
+}
+
+.focus:focus{
+  border: var(--blue) solid 2px;
+}
+
+.roundInput {
+  padding: 0.75rem 1rem;
+  font-size: 100%;
+  border-radius: 2rem;
+  outline: none;
+  border: solid 2px var(--grey);
+  max-width: 50%;
+  width: 400px;
+}
+
+.searchInput {
+  padding: 0.75rem 1rem;
+  font-size: 100%;
+  border-radius: 0.3rem;
+  outline: none;
+  border: solid 2px var(--grey);
+  max-width: 70%;
+  width: 100px;
+}
+
+.searchInput:focus  {
+  width: 300px;
+}
+
+.passwordInput {
+  padding: 0.75rem 1rem;
+  font-size: 100%;
+  border-radius: 0.3rem;
+  outline: none;
+  border: solid 2px var(--grey);
+  max-width: 50%;
+  width: 400px;
 }

@@ -236,7 +236,7 @@
   border-radius: 0.3rem;
   outline: none;
   border: solid 2px var(--grey);
-  max-width: 50%;
+  max-width: 70%;
   width: 100px;
 }
 
@@ -244,11 +244,13 @@
   width: 300px;
 }
 
-.inputWithIcon {
-  display: flex;
-  align-items: center;
+.passwordInput {
+  padding: 0.75rem 1rem;
+  font-size: 100%;
+  border-radius: 0.3rem;
+  outline: none;
+  border: solid 2px var(--grey);
+  max-width: 50%;
+  width: 400px;
 }
 
-.inputWithIcon > img {
-  height: 2rem;
-}
