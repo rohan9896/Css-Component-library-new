@@ -5,6 +5,7 @@ import Navbar from "./Navbar";
 import SocialMediaIcon from "./SocialIcon";
 import Avatar from "./Avatar";
 import Input from './Input';
+import Card from './Card';
 
 
 function ComponentsList() {
@@ -18,6 +19,7 @@ function ComponentsList() {
             <Navbar />
             <SocialMediaIcon />
             <Input />
+            <Card />
         </div>
     )
 }
