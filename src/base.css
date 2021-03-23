@@ -173,10 +173,11 @@
 
 /* Navbar */
 .nav1__navList {
+  max-width: 100%;
   list-style-type: none;
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   background-color: black;
   color: white;
   padding: 1rem;
@@ -194,6 +195,8 @@
 
 .nav1__navEnd > span {
   margin-right: 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .nav1__navEnd > span > button {

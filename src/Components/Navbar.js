@@ -82,7 +82,8 @@ function Navbar() {
             </li>
             <li className="nav1__navEnd">
               <span>
-                <input type="text" placeholder="🔎Search" />
+                {/* <input type="text" placeholder="🔎Search" /> */}
+                <input type="text" class="searchInput" placeholder="🔍 Search..." />
               </span>
               <span>
                 <button>LOGIN</button>
