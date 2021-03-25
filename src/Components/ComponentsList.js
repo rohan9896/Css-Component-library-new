@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import Buttons from "./Buttons";
 import Alert from "./Alert";
 import Navbar from "./Navbar";
-import SocialMediaIcon from "./SocialIcon";
 import Avatar from "./Avatar";
 import Input from "./Input";
 import Card from "./Card";
 import "./ComponentsList.css";
+import Icons from "./Icons";
 
 const components = [
   { name: "Buttons", id: 1, component: <Buttons /> },
-  { name: "Icons", id: 2, component: <SocialMediaIcon /> },
+  { name: "Icons", id: 2, component: <Icons /> },
   { name: "Avatar", id: 3, component: <Avatar /> },
   { name: "Input", id: 4, component: <Input /> },
   { name: "Navbar", id: 5, component: <Navbar /> },
@@ -60,10 +60,3 @@ function ComponentsList() {
 
 export default ComponentsList;
 
-/* <Buttons />
-            <Avatar />
-            <Alert />
-            <Navbar />
-            <SocialMediaIcon />
-            <Input />
-            <Card />  */

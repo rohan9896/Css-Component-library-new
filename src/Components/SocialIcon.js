@@ -11,70 +11,60 @@ const icons = [
     img:
       "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/41fd90db9cb72787dd5c1bac2f0adafc3211e132/icons/social%20icon/facebook.svg",
     name: "facebook",
-    link: "",
   },
   {
     id: 2,
     img:
       "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/41fd90db9cb72787dd5c1bac2f0adafc3211e132/icons/social%20icon/instagram.svg",
     name: "instagram",
-    link: "",
   },
   {
     id: 3,
     img:
       "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/41fd90db9cb72787dd5c1bac2f0adafc3211e132/icons/social%20icon/linkedin.svg",
     name: "linkedin",
-    link: "",
   },
   {
     id: 4,
     img:
       "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/41fd90db9cb72787dd5c1bac2f0adafc3211e132/icons/social%20icon/reddit.svg",
     name: "reddit",
-    link: "",
   },
   {
     id: 5,
     img:
       "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/41fd90db9cb72787dd5c1bac2f0adafc3211e132/icons/social%20icon/snapchat.svg",
     name: "snapchat",
-    link: "",
   },
   {
     id: 6,
     img:
       "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/41fd90db9cb72787dd5c1bac2f0adafc3211e132/icons/social%20icon/tik-tok.svg",
     name: "tiktok",
-    link: "",
   },
   {
     id: 7,
     img:
       "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/41fd90db9cb72787dd5c1bac2f0adafc3211e132/icons/social%20icon/whatsapp.svg",
     name: "whatsapp",
-    link: "",
   },
   {
     id: 8,
     img:
       "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/41fd90db9cb72787dd5c1bac2f0adafc3211e132/icons/social%20icon/youtube.svg",
     name: "youtube",
-    link: "",
   },
   {
     id: 9,
     img:
       "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/96c0f29d88447b22f4e2c1fde37458cef5e2b412/icons/social%20icon/twitter.svg",
     name: "twitter",
-    link: "",
   },
   {
     id: 10,
     img:
       "https://github.com/rohan9896/Testing-for-CSS-component-library/blob/main/icons/social%20icon/medium.png?raw=true",
     name: "medium",
-    link: "",
   },
 ];
 
