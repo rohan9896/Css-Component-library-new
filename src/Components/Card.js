@@ -36,6 +36,7 @@ function Card() {
           alt="model"
           src="https://github.com/rohan9896/Testing-for-CSS-component-library/blob/main/icons/card%20component/prod.jpeg?raw=true"
         ></img>
+        <div className='img'></div>
         <div className="buttonContainer">
           <button className="transparentBtn">❤ Wishlist</button>
           <button className="transparentBtn">Add To Cart</button>

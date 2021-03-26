@@ -96,11 +96,14 @@
 }
 
 .avatar-alphabet {
-  width: fit-content;
+  width: 2rem;
+  height: 3rem;
   color: white;
-  padding: 0.2rem 0.7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   border-radius: 50%;
-  font-size: xx-large;
+  font-size: 2rem;
   align-content: center;
   font-weight: 900;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -279,12 +282,13 @@
 }
 
 .card > img {
-  width: 12.7rem;
+  width: 12.8rem;
   max-width: 100%;
 }
 
 .buttonContainer {
   display: flex;
+  justify-content: space-between;
 }
 
 
