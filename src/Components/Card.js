@@ -34,7 +34,7 @@ function Card() {
       <div className="card">
         <img
           alt="model"
-          src="https://github.com/rohan9896/Testing-for-CSS-component-library/blob/main/icons/card%20component/prod.jpeg?raw=true"
+          src="https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-s21/gallery/in-galaxy-s21-5g-g996-sm-g996bzsdinu-368371784"
         ></img>
         <div className='img'></div>
         <div className="buttonContainer">
