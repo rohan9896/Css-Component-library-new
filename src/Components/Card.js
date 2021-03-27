@@ -7,24 +7,22 @@ import "./Heading.css";
 
 function Card() {
   const copyCode = `
-    <div class="card">
-        <img
-            alt="model"
-            src="https://github.com/rohan9896/Testing-for-CSS-component-library/blob/main/icons/
-        card%20component/prod.jpeg?raw=true"
-        ></img>
-        <div class="buttonContainer">
-            <button class="transparentBtn">❤ Wishlist</button>
-            <button class="transparentBtn">Add To Cart</button>
-        </div>
-        <div class="productInfo">
-            <p>Product Name</p>
-            <small>Details</small>
-            <p>Rating: 4.5/5</p>
-            <p>₹2999</p>
-        </div>
-        <span class="badge">New!</span>
-    </div>
+  <div class="card">
+  <img
+    alt="model"
+    src="https://github.com/rohan9896/Testing-for-CSS-component-library/blob/main/icons/card%20component/prod.jpeg?raw=true"
+  ></img>
+  <div class="productInfo">
+    <p>Product Name</p>
+    <small>A short description</small>
+    <small>Rating: 4.5/5</small>
+    <p>₹2999</p>
+    <small>Instock</small>
+  </div>
+  <button class='primary-button pink'>Add To Cart</button>
+  <span class="badge">New!</span>
+  <span class='heart'><img class='ecomm__icon' src="https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/309d5241b424ce7b648a1ac780f7be3dad194b0d/icons/ecomm/white%20heart.svg" alt="white heart" /></span>
+</div>
   `
 
   return (
@@ -34,23 +32,20 @@ function Card() {
       <div className="card">
         <img
           alt="model"
-          src="https://images.samsung.com/is/image/samsung/p6pim/in/galaxy-s21/gallery/in-galaxy-s21-5g-g996-sm-g996bzsdinu-368371784"
+          src="https://github.com/rohan9896/Testing-for-CSS-component-library/blob/main/icons/card%20component/prod.jpeg?raw=true"
         ></img>
-        <div className='img'></div>
-        <div className="buttonContainer">
-          <button className="transparentBtn">❤ Wishlist</button>
-          <button className="transparentBtn">Add To Cart</button>
-        </div>
         <div className="productInfo">
           <p>Product Name</p>
-          <small>Details</small>
-          <p>Rating: 4.5/5</p>
+          <small>A short description</small>
+          <small>Rating: 4.5/5</small>
           <p>₹2999</p>
+          <small>Instock</small>
         </div>
-        <span class="badge">New!</span>
+        <button className='primary-button pink'>Add To Cart</button>
+        <span className="badge">New!</span>
+        <span className='heart'><img class='ecomm__icon' src="https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/309d5241b424ce7b648a1ac780f7be3dad194b0d/icons/ecomm/white%20heart.svg" alt="white heart" /></span>
       </div>
       <CodeContainer codeForCopy={copyCode} />
-      
     </div>
   );
 }

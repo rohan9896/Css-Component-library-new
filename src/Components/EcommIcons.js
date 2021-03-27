@@ -29,6 +29,16 @@ const ecommIcons = [
       "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/8dde3b65380a2432ffc94bd652634054117b0159/icons/ecomm/search.svg",
     name: "search",
   },
+  {
+    id: 4,
+    img: "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/309d5241b424ce7b648a1ac780f7be3dad194b0d/icons/ecomm/white%20heart.svg",
+    name: "white heart"
+  },
+  {
+    id: 5,
+    img: "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/309d5241b424ce7b648a1ac780f7be3dad194b0d/icons/ecomm/heart.svg",
+    name: "red heart"
+  }
 ];
 
 const IconWithNum = [
