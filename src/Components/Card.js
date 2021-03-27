@@ -10,7 +10,11 @@ function Card() {
   <div class="card">
   <img
     alt="model"
-    src="https://github.com/rohan9896/Testing-for-CSS-component-library/blob/main/icons/card%20component/prod.jpeg?raw=true"
+    src="https://github.com/rohan9896
+    /Testing-for-CSS-component-library
+    /blob/main
+    /icons/card%20component
+    /prod.jpeg?raw=true"
   ></img>
   <div class="productInfo">
     <p>Product Name</p>
@@ -19,11 +23,23 @@ function Card() {
     <p>₹2999</p>
     <small>Instock</small>
   </div>
-  <button class='primary-button pink'>Add To Cart</button>
+  <button class="primary-button pink">Add To Cart</button>
   <span class="badge">New!</span>
-  <span class='heart'><img class='ecomm__icon' src="https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/309d5241b424ce7b648a1ac780f7be3dad194b0d/icons/ecomm/white%20heart.svg" alt="white heart" /></span>
+  <span class="heart">
+    <img
+      class="ecomm__icon"
+      src="https://raw.githubusercontent.com
+      /rohan9896/
+      Testing-for-CSS-component-library
+      /309d5241b424ce7b648a1ac780f7be3dad194b0d
+      /icons
+      /ecomm
+      /white%20heart.svg"
+      alt="white heart"
+    />
+  </span>
 </div>
-  `
+  `;
 
   return (
     <div className="Card__container">
@@ -41,9 +57,15 @@ function Card() {
           <p>₹2999</p>
           <small>Instock</small>
         </div>
-        <button className='primary-button pink'>Add To Cart</button>
+        <button className="primary-button pink">Add To Cart</button>
         <span className="badge">New!</span>
-        <span className='heart'><img class='ecomm__icon' src="https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/309d5241b424ce7b648a1ac780f7be3dad194b0d/icons/ecomm/white%20heart.svg" alt="white heart" /></span>
+        <span className="heart">
+          <img
+            class="ecomm__icon"
+            src="https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/309d5241b424ce7b648a1ac780f7be3dad194b0d/icons/ecomm/white%20heart.svg"
+            alt="white heart"
+          />
+        </span>
       </div>
       <CodeContainer codeForCopy={copyCode} />
     </div>
@@ -51,3 +73,5 @@ function Card() {
 }
 
 export default Card;
+
+/*  */
