@@ -328,7 +328,7 @@
   position: relative;
 }
 
-.iconWithNum .badge {
+.iconWithNum > span {
   position: absolute;
   background-color: var(--red);
   color: white;
