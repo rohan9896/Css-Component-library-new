@@ -10,11 +10,7 @@ function Card() {
   <div class="card">
   <img
     alt="model"
-    src="https://github.com/rohan9896
-    /Testing-for-CSS-component-library
-    /blob/main
-    /icons/card%20component
-    /prod.jpeg?raw=true"
+    src="https://bit.ly/2NY8Tx4"
   ></img>
   <div class="productInfo">
     <p>Product Name</p>
@@ -28,13 +24,7 @@ function Card() {
   <span class="heart">
     <img
       class="ecomm__icon"
-      src="https://raw.githubusercontent.com
-      /rohan9896/
-      Testing-for-CSS-component-library
-      /309d5241b424ce7b648a1ac780f7be3dad194b0d
-      /icons
-      /ecomm
-      /white%20heart.svg"
+      src="https://bit.ly/3rtgodg"
       alt="white heart"
     />
   </span>
@@ -48,7 +38,7 @@ function Card() {
       <div className="card">
         <img
           alt="model"
-          src="https://github.com/rohan9896/Testing-for-CSS-component-library/blob/main/icons/card%20component/prod.jpeg?raw=true"
+          src="https://bit.ly/2NY8Tx4"
         ></img>
         <div className="productInfo">
           <p>Product Name</p>
@@ -62,7 +52,7 @@ function Card() {
         <span className="heart">
           <img
             class="ecomm__icon"
-            src="https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/309d5241b424ce7b648a1ac780f7be3dad194b0d/icons/ecomm/white%20heart.svg"
+            src="https://bit.ly/3rtgodg"
             alt="white heart"
           />
         </span>
