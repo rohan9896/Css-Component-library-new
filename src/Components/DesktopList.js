@@ -44,6 +44,9 @@ function DesktopList() {
           {console.log(selectedComp.name)}
           {selectedComp.component}
         </div>
+        <div className="footer">
+          <p>Made With 🖤 By Rohan Gupta</p>
+        </div>
       </div>
     </>
   );

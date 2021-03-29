@@ -47,7 +47,7 @@ function Footer() {
             })
           }
         </ul>
-        <p>Made with 🧡 By Rohan Gupta</p>
+        <p>Made with 🖤 By Rohan Gupta</p>
       </footer>
     </div>
   );
