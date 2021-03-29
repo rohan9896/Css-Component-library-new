@@ -1,7 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Coming+Soon&family=Monoton&family=Nanum+Pen+Script&display=swap");
 
 .header__nav {
-  background-color: black;
+  max-width: 100%;
+  /* background-color: black; */
+  background-color: #111827;
   color: white;
   display: flex;
   font-weight: 700;
@@ -9,6 +11,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  border-bottom: solid 2px black;
 }
 
 .header__nav > span {
@@ -46,6 +49,7 @@
     margin: 0;
     padding: 1.5rem;
     background-color: black;
+    max-width: 100%;
   }
   .header__mobileList > li {
     margin: 1rem;

@@ -1,7 +1,9 @@
 .footer {
     padding: 1rem;
     color: white;
-    background-color: black;
+    background-color: #111827;
+    border-top: solid 1px;
+    margin-top: 2rem;
   }
   
   .footer__socialList {
