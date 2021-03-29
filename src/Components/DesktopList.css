@@ -3,7 +3,8 @@
     display: grid;
     grid-template-columns: 1fr 5fr;
     grid-gap: 1rem;
-    grid-template-areas: "sidebar component";
+    grid-template-areas: "sidebar component"
+                          "footer footer";
   }
 
   .sidebar {
@@ -20,6 +21,10 @@
   .components {
     grid-area: component;
     border-left: solid 1px;
+  }
+
+  .footer {
+    grid-area: footer;
   }
 
   .sidebar h2 {

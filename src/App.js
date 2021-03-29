@@ -18,13 +18,13 @@ function App() {
           <Route path="/" exact>
             <DocsHeader />
             <DocsContent />
+            <Footer />
           </Route>
           <Route path="/componentslist">
             <MobileList />
             <DesktopList />
           </Route>
         </Switch>
-        <Footer />
       </div>
     </Router>
   );
