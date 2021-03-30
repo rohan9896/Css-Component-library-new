@@ -20,7 +20,7 @@ function Navbar() {
       copyCode = `<nav><ul class="nav1__navList"><li class="nav1__navStart"><a href="${link1}">${nameOfLink1}</a><a href="${link2}">${nameOfLink2}</a><a href="${link3}">${nameOfLink3}</a></li><li class="nav1__navEnd"><span><input class="searchInput" type="text" placeholder="🔎Search" /></span><span><button>LOG IN</button></span></li></ul></nav>`;
       break;
     case "Nav2":
-      copyCode = `<nav><ul class="nav2__navList"><li class="nav2__navStart"><a href=${link1}>${nameOfLink1}</a><a href=${link2}>${nameOfLink2}</a><a href=${link3}>${nameOfLink3}</a></li><li><input type="text" class="searchInput-NonExpand" placeholder="🔍 Search..." /></li></ul></nav>`
+      copyCode = `<nav><ul class="nav2__navList"><li class="nav2__navStart"><a href="${link1}">${nameOfLink1}</a><a href="${link2}">${nameOfLink2}</a><a href="${link3}">${nameOfLink3}</a></li><li><input type="text" class="searchInput-NonExpand" placeholder="🔍 Search..." /></li></ul></nav>`
       break;
     default:
       break;
