@@ -13,7 +13,6 @@
   --maroon: #cd486b;
 }
 
-
 /* Buttons */
 /* Primary Button */
 .primary-button {
@@ -41,7 +40,7 @@
   background-color: var(--red);
 }
 .primary-button.lightOrange {
-    background-color: var(--lightOrange);
+  background-color: var(--lightOrange);
 }
 .primary-button.yellow {
   background-color: var(--yellow);
@@ -58,7 +57,6 @@
 .primary-button.maroon {
   background-color: var(--maroon);
 }
-
 
 /* icon button */
 .icon-button {
@@ -133,7 +131,7 @@
   color: red;
 }
 .alertText.warning {
-  color: #D97706;
+  color: #d97706;
 }
 .alertText.info {
   color: var(--blue);
@@ -141,7 +139,7 @@
 
 .alertIcon {
   height: 42px;
-  padding: 0.3rem 0.5rem ;
+  padding: 0.3rem 0.5rem;
 }
 
 .alertIcon.success {
@@ -151,12 +149,11 @@
   background-color: rgb(179, 11, 11);
 }
 .alertIcon.warning {
-  background-color: #D97706;
+  background-color: #d97706;
 }
 .alertIcon.info {
   background-color: var(--blue);
 }
-
 
 .alert > div > img {
   width: 40px;
@@ -172,7 +169,6 @@
     width: 14rem;
   }
 }
-
 
 /* Navbar */
 .nav1__navList {
@@ -203,7 +199,7 @@
 }
 
 .nav1__navEnd > span > button {
-  padding: .5rem 1.5rem;
+  padding: 0.5rem 1.5rem;
   border-radius: 0.5rem;
   border: 1px solid white;
   color: white;
@@ -222,6 +218,21 @@
   }
 }
 
+.nav2__navList {
+  background-color: #111827;
+  display: flex;
+  list-style-type: none;
+  padding: 1rem;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 100%;
+}
+
+.nav2__navStart > a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: white;
+}
 
 .primaryInput {
   padding: 0.75rem 1rem;
@@ -233,7 +244,7 @@
   width: 400px;
 }
 
-.focus:focus{
+.focus:focus {
   border: var(--blue) solid 2px;
 }
 
@@ -257,8 +268,30 @@
   width: 100px;
 }
 
-.searchInput:focus  {
+.searchInput:focus {
   width: 300px;
+}
+
+.searchInput-NonExpand {
+  padding: 0.75rem 1rem;
+  font-size: 100%;
+  border-radius: 0.3rem;
+  outline: none;
+  border: solid 2px var(--grey);
+  max-width: 70%;
+  width: 100px;
+}
+
+@media screen and (min-width: 720px) {
+  .searchInput-NonExpand {
+    width: 300px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .nav2__navStart > a {
+    margin: 0 0.3rem;
+  }
 }
 
 .passwordInput {

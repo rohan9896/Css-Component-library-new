@@ -12,8 +12,19 @@ function Navbar() {
     "Name2",
     "Name3",
   ]);
+  const [selected, setSelected] = useState("Nav1")
 
-  const copyCode = `<nav><ul class="nav1__navList"><li class="nav1__navStart"><a href="${link1}">${nameOfLink1}</a><a href="${link2}">${nameOfLink2}</a><a href="${link3}">${nameOfLink3}</a></li><li class="nav1__navEnd"><span><input class="searchInput" type="text" placeholder="🔎Search" /></span><span><button>LOG IN</button></span></li></ul></nav>`;
+  let copyCode;
+   switch (selected) {
+    case "Nav1":
+      copyCode = `<nav><ul class="nav1__navList"><li class="nav1__navStart"><a href="${link1}">${nameOfLink1}</a><a href="${link2}">${nameOfLink2}</a><a href="${link3}">${nameOfLink3}</a></li><li class="nav1__navEnd"><span><input class="searchInput" type="text" placeholder="🔎Search" /></span><span><button>LOG IN</button></span></li></ul></nav>`;
+      break;
+    case "Nav2":
+      copyCode = `<nav><ul class="nav2__navList"><li class="nav2__navStart"><a href=${link1}>${nameOfLink1}</a><a href=${link2}>${nameOfLink2}</a><a href=${link3}>${nameOfLink3}</a></li><li><input type="text" class="searchInput-NonExpand" placeholder="🔍 Search..." /></li></ul></nav>`
+      break;
+    default:
+      break;
+  } 
 
   return (
     <div>
@@ -73,7 +84,7 @@ function Navbar() {
             />
           </div>
         </div>
-        <nav>
+        <nav onClick={() => setSelected("Nav1")}>
           <ul className="nav1__navList">
             <li className="nav1__navStart">
               <a href={link1}>{nameOfLink1}</a>
@@ -95,6 +106,22 @@ function Navbar() {
             </li>
           </ul>
         </nav>
+        <nav onClick={() => setSelected("Nav2")}>
+          <ul className="nav2__navList">
+            <li className="nav2__navStart">
+              <a href={link1}>{nameOfLink1}</a>
+              <a href={link2}>{nameOfLink2}</a>
+              <a href={link3}>{nameOfLink3}</a>
+            </li>
+            <li>
+              <input
+                type="text"
+                className="searchInput-NonExpand"
+                placeholder="🔍 Search..."
+              />
+            </li>
+          </ul>
+        </nav>
         <CodeContainer codeForCopy={copyCode} />
       </div>
     </div>
@@ -102,3 +129,9 @@ function Navbar() {
 }
 
 export default Navbar;
+
+/*
+`
+<nav><ul class="nav2__navList"><li class="nav2__navStart"><a href={link1}>{nameOfLink1}</a><a href={link2}>{nameOfLink2}</a><a href={link3}>{nameOfLink3}</a></li><li><input type="text" class="searchInput-NonExpand" placeholder="🔍 Search..." /></li></ul></nav>
+`
+*/
