@@ -37,6 +37,12 @@ const inputs = [
     class: 'passwordInput',
     placeholder: 'Enter password here'
   },
+  {
+    id: 6,
+    type: "search-nonExpand",
+    class: "searchInput-NonExpand",
+    placeholder: "🔍 Search..."
+  }
 ]
 
 function Input() {
