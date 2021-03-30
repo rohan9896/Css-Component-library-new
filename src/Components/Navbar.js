@@ -13,7 +13,7 @@ function Navbar() {
     "Name3",
   ]);
 
-  const copyCode = `<nav><ul class="nav1__navList"><li class="nav1__navStart"><a href="${link1}">${nameOfLink1}</a><a href="${link2}">${nameOfLink2}</a><a href="${link3}">${nameOfLink3}</a></li><li class="nav1__navEnd"><span><input type="text" placeholder="🔎Search" /></span><span><button>LOG IN</button></span></li></ul></nav>`;
+  const copyCode = `<nav><ul class="nav1__navList"><li class="nav1__navStart"><a href="${link1}">${nameOfLink1}</a><a href="${link2}">${nameOfLink2}</a><a href="${link3}">${nameOfLink3}</a></li><li class="nav1__navEnd"><span><input class="searchInput" type="text" placeholder="🔎Search" /></span><span><button>LOG IN</button></span></li></ul></nav>`;
 
   return (
     <div>
@@ -85,7 +85,7 @@ function Navbar() {
                 {/* <input type="text" placeholder="🔎Search" /> */}
                 <input
                   type="text"
-                  class="searchInput"
+                  className="searchInput"
                   placeholder="🔍 Search..."
                 />
               </span>
