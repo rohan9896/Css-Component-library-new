@@ -38,6 +38,11 @@ const ecommIcons = [
     id: 5,
     img: "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/309d5241b424ce7b648a1ac780f7be3dad194b0d/icons/ecomm/heart.svg",
     name: "red heart"
+  },
+  {
+    id: 6,
+    img: "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/1dcd8395b4bc7f50aaa79d0c36678fef583d1143/icons/ecomm/wishlist.svg",
+    name: "wishlist"
   }
 ];
 
