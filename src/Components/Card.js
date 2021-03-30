@@ -54,6 +54,7 @@ function Card() {
             class="ecomm__icon"
             src="https://bit.ly/3rtgodg"
             alt="white heart"
+            style={{height: "2rem", width: "2rem"}}
           />
         </span>
       </div>
