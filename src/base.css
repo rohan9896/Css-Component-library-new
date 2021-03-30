@@ -232,6 +232,19 @@
   margin-right: 1rem;
   text-decoration: none;
   color: white;
+  font-size: larger;
+}
+
+@media screen and (max-width: 400px) {
+  .nav2__navStart > a {
+    margin: 0 0.3rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .nav2__navStart > a {
+    font-size: medium;
+  }
 }
 
 .primaryInput {
@@ -285,12 +298,6 @@
 @media screen and (min-width: 720px) {
   .searchInput-NonExpand {
     width: 300px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  .nav2__navStart > a {
-    margin: 0 0.3rem;
   }
 }
 
