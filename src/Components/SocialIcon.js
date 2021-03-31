@@ -66,6 +66,11 @@ const icons = [
       "https://github.com/rohan9896/Testing-for-CSS-component-library/blob/main/icons/social%20icon/medium.png?raw=true",
     name: "medium",
   },
+  {
+    id: 11,
+    img: "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/e6cb96c466ed6305cdf465e6f86c6bde0150fd7e/icons/social%20icon/github.svg",
+    name: "github"
+  }
 ];
 
 function SocialIcon() {
