@@ -347,7 +347,7 @@
 }
 
 .badge {
-  background-color: var(--pink);
+  background-color: var(--black);
   color: white;
   font-size: small;
   padding: 0.1rem 0.2rem;

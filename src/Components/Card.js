@@ -19,7 +19,7 @@ function Card() {
     <p>₹2999</p>
     <small>Instock</small>
   </div>
-  <button class="primary-button pink">Add To Cart</button>
+  <button class="primary-button black">Add To Cart</button>
   <span class="badge">New!</span>
   <span class="heart">
     <img
@@ -47,7 +47,7 @@ function Card() {
           <p>₹2999</p>
           <small>Instock</small>
         </div>
-        <button className="primary-button pink">Add To Cart</button>
+        <button className="primary-button black">Add To Cart</button>
         <span className="badge">New!</span>
         <span className="heart">
           <img
