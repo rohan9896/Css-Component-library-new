@@ -11,6 +11,7 @@
   --greenishBlue: #17a2b8;
   --grey: #f0e9e6;
   --maroon: #cd486b;
+  --black: #111827;
 }
 
 /* Buttons */
@@ -56,6 +57,9 @@
 }
 .primary-button.maroon {
   background-color: var(--maroon);
+}
+.primary-button.black {
+  background-color: var(--black);
 }
 
 /* icon button */

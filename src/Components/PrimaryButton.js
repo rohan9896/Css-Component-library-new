@@ -46,6 +46,10 @@ const colors = [
     id: 10,
     colorName: `maroon`,
   },
+  {
+    id: 11,
+    colorName: `black`
+  }
 ];
 
 
