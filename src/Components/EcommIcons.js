@@ -43,7 +43,22 @@ const ecommIcons = [
     id: 6,
     img: "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/1dcd8395b4bc7f50aaa79d0c36678fef583d1143/icons/ecomm/wishlist.svg",
     name: "wishlist"
-  }
+  },
+  {
+    id: 7,
+    img: "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/a1e961baa4dda6a20bb50123b9aa102aea3091ef/icons/ecomm/payment.svg",
+    name: "payment"
+  },
+  {
+    id: 8,
+    img: "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/a1e961baa4dda6a20bb50123b9aa102aea3091ef/icons/ecomm/truck.svg",
+    name: "truck"
+  },
+  {
+    id: 9,
+    img: "https://raw.githubusercontent.com/rohan9896/Testing-for-CSS-component-library/a1e961baa4dda6a20bb50123b9aa102aea3091ef/icons/ecomm/customer_support.svg",
+    name: "customer_support"
+  },
 ];
 
 const IconWithNum = [
