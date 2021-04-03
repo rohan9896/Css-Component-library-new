@@ -37,7 +37,7 @@ function Card() {
   const card2 = `
   <div class="card2">
     <img alt="prod" src="https://github.com/rohan9896/Testing-for-CSS-component-library/blob/main/icons/card%20component/prod2.jpeg?raw=true" />
-    <span className="card2__brand">Adidas</span>
+    <span class="card2__brand">Adidas</span>
     <span>Flat 80% OFF</span>
   </div>
   `
