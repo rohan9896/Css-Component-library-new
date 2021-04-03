@@ -15,3 +15,7 @@
 .card {
     margin-bottom: 2rem;
 }
+
+.card, .card2 {
+    cursor: pointer;
+}
