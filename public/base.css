@@ -12,6 +12,7 @@
   --grey: #f0e9e6;
   --maroon: #cd486b;
   --black: #111827;
+  --darkBlue: rgb(20, 110, 180);
 }
 
 /* Buttons */
@@ -60,6 +61,9 @@
 }
 .primary-button.black {
   background-color: var(--black);
+}
+.primary-button.darkBlue {
+  background-color: var(--darkBlue);
 }
 
 /* icon button */
@@ -364,7 +368,7 @@
 }
 
 .badge {
-  background-color: var(--black);
+  background-color: var(--red);
   color: white;
   font-size: small;
   padding: 0.1rem 0.2rem;
