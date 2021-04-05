@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&display=swap");
+
 @media screen and (min-width: 1310px) {
   .desktop__view {
     display: grid;
@@ -8,9 +10,10 @@
   }
 
   .sidebar {
+    font-family: "Poppins", sans-serif;
     color: black;
     position: sticky;
-    padding: 2rem;
+    padding: 0.5rem;
     grid-row-start: 1;
     grid-row-end: 2;
     grid-area: sidebar;
@@ -20,7 +23,7 @@
 
   .components {
     grid-area: component;
-    border-left: solid 1px;
+    border-left: solid 1px rgb(218, 212, 212);
   }
 
   .footer {
