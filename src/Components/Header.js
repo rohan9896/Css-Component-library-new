@@ -8,7 +8,7 @@ function Header() {
   return (
     <div>
       <nav className="header__nav">
-        <a href="https://effortlessui.netlify.app/" className="logo">🧿EFFORTLESS UI</a>
+        <Link to="/"><span className="heading-logo">🧿EFFORTLESS UI</span></Link>
         <ul className="header__DesktopList">
           <li>
             <Link to="/">Getting Started</Link>

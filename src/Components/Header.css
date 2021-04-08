@@ -15,10 +15,9 @@
   font-family: "Poppins", sans-serif;
 }
 
-.header__nav > a {
+.heading-logo {
     font-family: 'Playfair Display SC', serif;
     font-size: x-large;
-
 }
 
 .header__DesktopList > li > Link, a {

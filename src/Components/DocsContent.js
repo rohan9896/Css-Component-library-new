@@ -7,7 +7,7 @@ const copyCode = `@import url("https://effortlessui.netlify.app/base.css");`;
 function DocsContent() {
   return (
     <div>
-      <div style={{margin: "2rem"}} className="docsContent">
+      <div id="installation" style={{margin: "2rem"}} className="docsContent">
           <h1>📥 INSTALLATION</h1>
           <h4>Copy the following line and Paste it to a CSS file and link that file to your HTML document</h4>
           <CodeContainer codeForCopy={copyCode} />
