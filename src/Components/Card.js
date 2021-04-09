@@ -62,7 +62,7 @@ function Card() {
         <img alt="model" src="https://bit.ly/2NY8Tx4"></img>
         <div className="productInfo">
           <p>Product Name</p>
-          <small>A short description</small>
+          <small>A short description and a very nice description that will blow your mind!!</small>
           <small>Rating: 4.5/5</small>
           <p>₹2999</p>
           <small>Instock</small>
