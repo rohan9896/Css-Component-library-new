@@ -28,8 +28,8 @@ function DocsContent() {
       </div>
       <div style={reactComponentsContainerStyle}>
         <h1>Also, checkOut React Components-</h1>
-        <a style={linkStyle} href="https://codesandbox.io/dashboard/all/ecommerce-components?workspace=6d5fb724-6080-4712-8316-96a5bcb2a71b">E-Commerce Website Components</a>
-        <a style={linkStyle} href="https://codesandbox.io/dashboard/all/video-lib?workspace=6d5fb724-6080-4712-8316-96a5bcb2a71b">Video Library(Youtube like app) Components</a>
+        <a target="_blank" rel="noreferrer" style={linkStyle} href="https://codesandbox.io/dashboard/all/ecommerce-components?workspace=6d5fb724-6080-4712-8316-96a5bcb2a71b">E-Commerce Website Components</a>
+        <a target="_blank" rel="noreferrer" style={linkStyle} href="https://codesandbox.io/dashboard/all/video-lib?workspace=6d5fb724-6080-4712-8316-96a5bcb2a71b">Video Library(Youtube like app) Components</a>
       </div>
     </div>
   );
